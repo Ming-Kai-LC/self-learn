@@ -1,0 +1,33 @@
+# Core Data Science Stack
+# Last updated: 2025-01
+
+# Jupyter Environment
+jupyter>=1.0.0
+notebook>=7.0.0
+ipython>=8.0.0
+ipywidgets>=8.0.0
+
+# Numerical Computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data Manipulation and Analysis
+pandas>=2.0.0
+
+# Data Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Statistical Analysis
+statsmodels>=0.14.0
+
+# Utilities
+openpyxl>=3.1.0  # For Excel file support
+xlrd>=2.0.1      # For reading older Excel files
+
+# Optional but recommended
+jupyterlab>=4.0.0  # Modern Jupyter interface

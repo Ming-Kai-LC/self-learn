@@ -1,0 +1,79 @@
+{
+    // VS Code Tasks Configuration Example
+    // ====================================
+    // Copy to .vscode/tasks.json to automate workflows
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Python Script",
+            "type": "shell",
+            "command": "python",
+            "args": ["${file}"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Python Tests",
+            "type": "shell",
+            "command": "python",
+            "args": ["-m", "pytest", "tests/"],
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Lint Python Code",
+            "type": "shell",
+            "command": "pylint",
+            "args": ["${file}"],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "Format Python Code",
+            "type": "shell",
+            "command": "black",
+            "args": ["${file}"],
+            "presentation": {
+                "reveal": "silent"
+            }
+        },
+        {
+            "label": "Install Requirements",
+            "type": "shell",
+            "command": "pip",
+            "args": ["install", "-r", "requirements.txt"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "Start Development Server",
+            "type": "shell",
+            "command": "python",
+            "args": ["-m", "http.server", "8000"],
+            "isBackground": true,
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "Build and Run",
+            "dependsOn": ["Format Python Code", "Lint Python Code", "Run Python Script"],
+            "dependsOrder": "sequence",
+            "group": "build"
+        }
+    ]
+}

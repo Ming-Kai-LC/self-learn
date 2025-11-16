@@ -1,0 +1,9 @@
+# This template demonstrates the recommended structure for educational notebook projects
+#
+# Directory structure:
+# - notebooks/: Educational Jupyter notebooks (numbered 00-10)
+# - data/: Project data organized by processing stage
+# - scripts/: Helper scripts and generators
+# - docs/: Additional documentation
+# - requirements.txt: Python dependencies
+# - README.md: Project overview and getting started guide

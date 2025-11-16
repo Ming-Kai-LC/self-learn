@@ -1,0 +1,24 @@
+# Data Visualization Fundamentals - Python Dependencies
+
+# Core Visualization Libraries
+matplotlib>=3.5.0          # Foundational plotting library
+seaborn>=0.12.0            # Statistical data visualization
+plotly>=5.14.0             # Interactive visualizations
+kaleido>=0.2.1             # Static image export for Plotly
+
+# Data Processing and Analysis
+numpy>=1.23.0              # Numerical computing
+pandas>=1.5.0              # Data manipulation and analysis
+scipy>=1.9.0               # Scientific computing
+
+# Jupyter Environment
+jupyter>=1.0.0             # Jupyter metapackage
+notebook>=6.5.0            # Jupyter notebook
+ipython>=8.10.0            # Enhanced Python shell
+ipykernel>=6.20.0          # Jupyter kernel for Python
+ipywidgets>=8.0.0          # Interactive widgets for Plotly
+
+# Additional Utilities
+pillow>=9.3.0              # Image processing (for plot manipulation)
+requests>=2.28.0           # HTTP library (for downloading datasets)
+openpyxl>=3.0.0            # Excel file support for pandas

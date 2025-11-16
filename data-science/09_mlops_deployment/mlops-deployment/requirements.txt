@@ -1,0 +1,46 @@
+# MLOps and Deployment - Dependencies
+
+# MLOps tools
+mlflow>=2.6.0
+wandb>=0.15.0  # Weights & Biases
+
+# Model serving
+fastapi>=0.100.0
+uvicorn>=0.23.0
+pydantic>=2.0.0
+streamlit>=1.25.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+torch>=2.0.0
+tensorflow>=2.13.0
+xgboost>=2.0.0
+
+# Data manipulation
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Utilities
+python-multipart>=0.0.6  # For FastAPI file uploads
+joblib>=1.3.0
+cloudpickle>=2.2.0
+
+# Monitoring
+prometheus-client>=0.17.0
+
+# Testing
+pytest>=7.4.0
+httpx>=0.24.0  # For FastAPI testing
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Logging
+loguru>=0.7.0
+
+# Optional: Container management
+# docker>=6.1.0
+
+# Jupyter (for documentation)
+jupyter>=1.0.0
+jupyterlab>=4.0.0

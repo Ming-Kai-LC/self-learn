@@ -1,0 +1,29 @@
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Data Processing & Visualization
+numpy>=1.24.0
+matplotlib>=3.5.0
+seaborn>=0.12.0
+Pillow>=9.0.0
+
+# Jupyter Environment
+jupyter>=1.0.0
+ipykernel>=6.20.0
+ipywidgets>=8.0.0
+
+# Machine Learning Utilities
+scikit-learn>=1.2.0
+tqdm>=4.65.0
+
+# Image Processing
+opencv-python>=4.7.0
+
+# Model Visualization
+graphviz>=0.20.0
+torchsummary>=1.5.1
+
+# Additional Utilities
+pandas>=1.5.0
+requests>=2.28.0

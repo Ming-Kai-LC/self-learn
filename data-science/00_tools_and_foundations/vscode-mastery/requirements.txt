@@ -1,0 +1,23 @@
+# VS Code Mastery Project Dependencies
+
+# Core Jupyter and IPython
+jupyter>=1.0.0
+notebook>=6.5.0
+ipython>=8.0.0
+ipywidgets>=8.0.0
+
+# Enhanced notebook experience
+jupyterlab>=3.6.0          # Alternative interface to classic notebooks
+ipykernel>=6.20.0          # Python kernel for Jupyter
+
+# Code formatting and linting (for Python examples)
+black>=23.0.0              # Code formatter
+pylint>=2.16.0             # Code linter
+flake8>=6.0.0              # Style guide enforcement
+
+# Documentation and markdown
+markdown>=3.4.0            # Markdown processing
+pygments>=2.14.0           # Syntax highlighting
+
+# Utilities
+colorama>=0.4.6            # Colored terminal output for scripts

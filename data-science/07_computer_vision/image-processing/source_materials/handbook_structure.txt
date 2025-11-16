@@ -1,0 +1,119 @@
+DOCUMENT STRUCTURE ANALYSIS
+================================================================================
+
+POTENTIAL CHAPTERS:
+--------------------------------------------------------------------------------
+Line 2: PAGE 1
+Line 7: BMDS2133
+Line 20: PAGE 2
+Line 23: BMDS2133
+Line 105: PAGE 3
+Line 108: BMDS2133
+Line 193: PAGE 4
+Line 196: BMDS2133
+Line 282: PAGE 5
+Line 285: BMDS2133
+Line 324: PAGE 6
+Line 327: BMDS2133
+Line 359: PAGE 7
+Line 362: BMDS2133
+Line 374: YUNG JUN YONG
+Line 381: PAGE 8
+Line 385: BMDS2133
+Line 394: PAGE 9
+Line 399: BMDS2133
+Line 422: PAGE 10
+Line 429: BMDS2133
+Line 458: PAGE 11
+Line 463: BMDS2133
+Line 502: PAGE 12
+Line 506: BMDS2133
+Line 542: PAGE 13
+Line 546: BMDS2133
+Line 591: PAGE 14
+Line 594: BMDS2133
+Line 635: PAGE 15
+Line 638: BMDS2133
+Line 674: PAGE 16
+Line 678: BMDS2133
+Line 687: FONT_HERSHEY_SIMPLEX)
+Line 695: FONT_HERSHEY_COMPLEX
+Line 700: FONT_HERSHEY_SCRIPT_SIMPLEX
+Line 726: PAGE 17
+Line 729: BMDS2133
+Line 745: PAGE 18
+Line 748: BMDS2133
+Line 796: PAGE 19
+Line 799: BMDS2133
+Line 845: PAGE 20
+Line 848: BMDS2133
+Line 884: PAGE 21
+Line 887: BMDS2133
+Line 896: PAGE 22
+Line 899: BMDS2133
+Line 939: PAGE 23
+Line 942: BMDS2133
+
+
+POTENTIAL SECTIONS:
+--------------------------------------------------------------------------------
+Line 144: 1. Averaging​
+Line 146: 2. Gaussian Blurring​
+Line 148: 3. Median Blurring​
+Line 150: 4. Bilateral Filtering​
+Line 166: 1. cv.fastNlMeansDenoisingColored()​
+Line 332: 2000. Vadim Pisarevsky joined Gary Bradsky to manage Intel's Russian software OpenCV
+Line 350: 1.​ Download and install anaconda environment Python X.X version:
+Line 351: 2.​ Download: https://www.anaconda.com/download/#windows
+Line 352: 3.​ Install: http://docs.anaconda.com/anaconda/install/windows/
+Line 355: 4.​ Open Anaconda Prompt
+Line 364: 5.​ Start Menu / Anaconda3 / Anaconda Prompt
+Line 366: 6.​
+Line 368: 7.​ In Anaconda Prompt, type commands to install necessary libraries:
+Line 738: 1.​ Try to create the logo of OpenCV/Your favoured icon/any other object using drawing
+Line 740: 2.​ Post it to Padlet and name your masterpiece.
+Line 755: 1. Region of Interest (ROI):
+Line 763: 2. Region of Non-interest (RONI):
+Line 1204: 1.​ Download & Install Tesseract from OCR (Search UB Mannheim Tesseract)
+Line 1216: 2.​ Install wrapper (pip install pytesseract)
+Line 1341: 1.​ Segmentation
+Line 1342: 2.​ Increase the contrast
+Line 1343: 3.​ Enhance the image details
+Line 1344: 4.​ Line detection
+Line 1345: 5.​ Good for feature extraction (to be used in machine learning)
+Line 1512: 1. Averaging
+Line 1538: 2. Gaussian Blurring
+Line 1560: 3. Median Blurring
+Line 1582: 4. Bilateral Filtering
+Line 1798: 1.​ cv.fastNlMeansDenoising() - works with a single grayscale images
+Line 1799: 2.​ cv.fastNlMeansDenoisingColored() - works with a colour image.
+Line 1800: 3.​ cv.fastNlMeansDenoisingMulti() - works with image sequence captured in short period of
+Line 1802: 4.​ cv.fastNlMeansDenoisingColoredMulti() - same as above, but for colour images.
+Line 1823: 1. cv.fastNlMeansDenoisingColored()
+Line 2643: 1.​ Dilation
+Line 2644: 2.​ Erosion
+Line 2653: 3.​ Opening
+Line 2654: 4.​ Closing
+Line 2655: 5.​ Morphological Gradient
+Line 2656: 6.​ Top Hat
+Line 2657: 7.​ Black Hat
+Line 2659: 1.​ User Interface:
+Line 2664: 2.​ Mouse Interaction:
+Line 2667: 3.​ Keyboard Inputs:
+Line 2676: 4.​ Display Results:
+Line 2680: 1.​ Set Up:
+Line 2683: 2.​ Implement Morphological Operations:
+Line 2685: 3.​ User Interaction:
+Line 2688: 4.​ Apply Operations:
+Line 3158: 1.​ Show intermediate images (image after each operation).
+Line 3159: 2.​ Figure out which parameter shows the number of objects.
+Line 3160: 3.​ Try with your image and post your results in Padlet.
+Line 3254: 1.​ Try with your own images.
+Line 3255: 2.​ Modify the parameter in cv.goodFeaturesToTrack to get the best results.
+Line 3256: 3.​ Post your results in Padlet.
+Line 3328: 1.​ Since you already found keypoints, you can call sift.compute() which computes the
+Line 3338: 2.​ If you didn't find keypoints, directly find keypoints and descriptors in
+Line 3630: 1.​ First, as usual, let's find SIFT features in images and apply the ratio test to find the best
+Line 3668: 2.​ Now we set a condition that at least 10 matches (defined by MIN_MATCH_COUNT) are to
+Line 3696: 3.​ Finally we draw our inliers (if successfully found the object) or matching keypoints (if failed).
+Line 3703: 4.​ See the result.

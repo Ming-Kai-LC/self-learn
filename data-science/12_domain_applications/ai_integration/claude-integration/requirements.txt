@@ -1,0 +1,28 @@
+# Claude Code Learning Project Requirements
+
+# Note: This project focuses on Claude Code CLI, not the API
+# The anthropic package is optional and only needed if you want to
+# explore API examples in addition to Claude Code features
+
+# Jupyter for interactive learning notebooks
+jupyter>=1.0.0
+ipykernel>=6.29.0
+notebook>=7.0.0
+
+# Optional: Anthropic API client (for API comparison/exploration)
+# anthropic>=0.42.0
+
+# Development tools (examples in notebooks)
+# Uncomment based on your needs:
+
+# Python code quality
+# black>=23.0.0
+# pylint>=3.0.0
+# flake8>=6.0.0
+
+# Testing
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# JavaScript/Node tools (if working with JS projects)
+# These would be installed via npm, not pip

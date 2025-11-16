@@ -1,0 +1,144 @@
+# Data Engineering Intermediate - Real-Time Streaming Requirements
+# Python 3.8+ required
+
+# ============================================================================
+# Core Environment
+# ============================================================================
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.25.0
+
+# ============================================================================
+# Data Manipulation and Analysis
+# ============================================================================
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=12.0.0              # For Parquet file support
+
+# ============================================================================
+# Apache Kafka - Event Streaming
+# ============================================================================
+confluent-kafka>=2.3.0       # High-performance Kafka Python client
+kafka-python>=2.0.2          # Alternative pure Python Kafka client
+avro-python3>=1.10.2         # Avro serialization for Kafka
+
+# ============================================================================
+# Apache Flink - Stream Processing
+# ============================================================================
+apache-flink>=1.18.0         # Apache Flink Python API
+pyflink>=1.18.0              # PyFlink for stream processing
+
+# ============================================================================
+# Schema and Serialization
+# ============================================================================
+python-schema-registry-client>=2.5.0  # Schema Registry client
+fastavro>=1.8.0              # Fast Avro serialization
+protobuf>=4.24.0             # Protocol Buffers support
+jsonschema>=4.19.0           # JSON schema validation
+
+# ============================================================================
+# Async and Concurrency
+# ============================================================================
+asyncio-mqtt>=0.16.0         # Async MQTT client (optional)
+aiohttp>=3.9.0               # Async HTTP client
+aiokafka>=0.9.0              # Async Kafka client
+
+# ============================================================================
+# Database Connectivity (for CDC examples)
+# ============================================================================
+SQLAlchemy>=2.0.0            # SQL toolkit and ORM
+psycopg2-binary>=2.9.0       # PostgreSQL adapter
+pymysql>=1.1.0               # MySQL connector
+
+# ============================================================================
+# Data Validation and Quality
+# ============================================================================
+great-expectations>=0.17.0   # Data validation framework
+pandera>=0.17.0              # Statistical data validation
+pydantic>=2.4.0              # Data validation using type hints
+
+# ============================================================================
+# Monitoring and Observability
+# ============================================================================
+prometheus-client>=0.18.0    # Prometheus metrics
+statsd>=4.0.0                # StatsD client for metrics
+py-zipkin>=1.2.0             # Distributed tracing (optional)
+
+# ============================================================================
+# API and Web
+# ============================================================================
+requests>=2.31.0             # HTTP library
+flask>=3.0.0                 # Web framework (for dashboards)
+fastapi>=0.104.0             # Modern API framework
+uvicorn>=0.24.0              # ASGI server for FastAPI
+
+# ============================================================================
+# Utilities
+# ============================================================================
+python-dateutil>=2.8.2       # Date utilities
+python-dotenv>=1.0.0         # Environment variable management
+pyyaml>=6.0                  # YAML parser
+toml>=0.10.2                 # TOML parser
+click>=8.1.0                 # CLI framework
+tqdm>=4.66.0                 # Progress bars
+tabulate>=0.9.0              # Pretty-print tabular data
+colorama>=0.4.6              # Colored terminal output
+
+# ============================================================================
+# Development and Testing
+# ============================================================================
+pytest>=7.4.0                # Testing framework
+pytest-asyncio>=0.21.0       # Async test support
+pytest-cov>=4.1.0            # Coverage plugin
+black>=23.7.0                # Code formatter
+flake8>=6.1.0                # Linting
+isort>=5.12.0                # Import sorting
+mypy>=1.5.0                  # Type checking
+
+# ============================================================================
+# Logging
+# ============================================================================
+loguru>=0.7.0                # Advanced logging
+structlog>=23.1.0            # Structured logging
+
+# ============================================================================
+# Visualization
+# ============================================================================
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0               # Interactive plots
+
+# ============================================================================
+# Time Series and Windowing
+# ============================================================================
+more-itertools>=10.1.0       # Extended itertools
+sortedcontainers>=2.4.0      # Sorted collections for windows
+
+# ============================================================================
+# Docker Integration (for management)
+# ============================================================================
+docker>=6.1.0                # Docker Python SDK
+
+# ============================================================================
+# Notes:
+# ============================================================================
+# - Apache Kafka and Flink run in Docker containers
+#   The Python libraries above are clients to interact with them
+#
+# - Docker Desktop is REQUIRED for this course
+#   - Windows: Install Docker Desktop for Windows
+#   - Mac: Install Docker Desktop for Mac
+#   - Linux: Install Docker Engine and Docker Compose
+#
+# - Alternative installations:
+#   - Use Confluent Cloud (cloud Kafka) instead of local Docker
+#   - Use AWS Kinesis Data Analytics instead of local Flink
+#
+# - For production use, pin exact versions (==) instead of minimum (>=)
+#
+# - Some packages are marked optional in modules where they're introduced
+#   The core packages (confluent-kafka, pyflink) are required
+#
+# - Run `docker-compose up -d` before starting notebooks
+#   This starts Kafka, Zookeeper, and Flink clusters

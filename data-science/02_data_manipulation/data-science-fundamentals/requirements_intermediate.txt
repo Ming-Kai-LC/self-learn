@@ -1,0 +1,172 @@
+# Intermediate Data Science Requirements
+# Advanced ML & Deep Learning Track
+# Install after requirements.txt
+
+# Base requirements (if not already installed)
+-r requirements.txt
+
+# ==============================================================================
+# ADVANCED MACHINE LEARNING
+# ==============================================================================
+
+# Gradient Boosting Libraries
+xgboost>=2.0.0           # Extreme Gradient Boosting
+lightgbm>=4.0.0          # Light Gradient Boosting Machine
+catboost>=1.2.0          # Categorical Boosting
+
+# Hyperparameter Optimization
+optuna>=3.3.0            # Automated hyperparameter tuning
+hyperopt>=0.2.7          # Bayesian optimization
+scikit-optimize>=0.9.0   # Bayesian optimization for scikit-learn
+
+# ==============================================================================
+# DEEP LEARNING FRAMEWORKS
+# ==============================================================================
+
+# TensorFlow & Keras
+tensorflow>=2.13.0       # Deep learning framework
+keras>=2.13.0            # High-level neural networks API
+
+# PyTorch (optional - for comparison)
+torch>=2.0.0             # PyTorch deep learning
+torchvision>=0.15.0      # Computer vision for PyTorch
+
+# ==============================================================================
+# NATURAL LANGUAGE PROCESSING
+# ==============================================================================
+
+# NLP Libraries
+transformers>=4.30.0     # Hugging Face transformers (BERT, GPT, etc.)
+nltk>=3.8                # Natural Language Toolkit
+spacy>=3.6.0             # Industrial-strength NLP
+gensim>=4.3.0            # Topic modeling and word embeddings
+textblob>=0.17.0         # Simple NLP
+
+# Language Models
+sentence-transformers>=2.2.0  # Sentence embeddings
+
+# ==============================================================================
+# COMPUTER VISION
+# ==============================================================================
+
+# Vision Libraries
+opencv-python>=4.8.0     # Computer vision
+Pillow>=10.0.0           # Image processing
+albumentations>=1.3.0    # Advanced image augmentations
+
+# ==============================================================================
+# MODEL INTERPRETATION & EXPLAINABILITY
+# ==============================================================================
+
+shap>=0.42.0             # SHapley Additive exPlanations
+lime>=0.2.0              # Local Interpretable Model-agnostic Explanations
+eli5>=0.13.0             # Explain ML models
+
+# ==============================================================================
+# EXPERIMENT TRACKING & MLOPS
+# ==============================================================================
+
+mlflow>=2.7.0            # ML lifecycle management
+wandb>=0.15.0            # Weights & Biases experiment tracking
+tensorboard>=2.13.0      # TensorFlow visualization
+
+# ==============================================================================
+# MODEL DEPLOYMENT
+# ==============================================================================
+
+# Web Frameworks
+flask>=3.0.0             # Lightweight web framework
+flask-cors>=4.0.0        # CORS support for Flask
+streamlit>=1.28.0        # Interactive web apps
+gradio>=3.50.0           # ML demo interface
+
+# Serving
+fastapi>=0.104.0         # Modern API framework
+uvicorn>=0.24.0          # ASGI server
+gunicorn>=21.2.0         # WSGI server
+
+# ==============================================================================
+# TIME SERIES
+# ==============================================================================
+
+prophet>=1.1             # Facebook's forecasting tool
+statsforecast>=1.5.0     # Statistical forecasting
+pmdarima>=2.0.3          # Auto ARIMA
+
+# ==============================================================================
+# UTILITIES
+# ==============================================================================
+
+# Data Processing
+imbalanced-learn>=0.11.0  # Handle imbalanced datasets
+category-encoders>=2.6.0  # Categorical encoding methods
+featuretools>=1.28.0      # Automated feature engineering
+
+# Visualization
+yellowbrick>=1.5         # ML visualization
+dtreeviz>=2.2.0          # Decision tree visualization
+
+# Model Serialization
+joblib>=1.3.0            # Efficient model saving
+dill>=0.3.7              # Extended pickling
+
+# Progress Bars
+tqdm>=4.66.0             # Progress bars
+
+# Configuration
+python-dotenv>=1.0.0     # Environment variables
+pyyaml>=6.0              # YAML configuration files
+
+# ==============================================================================
+# OPTIONAL: Cloud & Big Data
+# ==============================================================================
+
+# Uncomment if deploying to cloud
+# boto3>=1.28.0          # AWS SDK
+# google-cloud-storage>=2.10.0  # Google Cloud Storage
+# azure-storage-blob>=12.18.0   # Azure Blob Storage
+
+# Uncomment for big data
+# pyspark>=3.4.0         # Apache Spark
+# dask[complete]>=2023.9.0  # Parallel computing
+
+# ==============================================================================
+# DEVELOPMENT TOOLS
+# ==============================================================================
+
+# Testing
+pytest>=7.4.0            # Testing framework
+pytest-cov>=4.1.0        # Code coverage
+
+# Code Quality
+black>=23.9.0            # Code formatter
+flake8>=6.1.0            # Style guide enforcement
+mypy>=1.5.0              # Static type checker
+
+# Documentation
+mkdocs>=1.5.0            # Documentation generator
+mkdocs-material>=9.4.0   # Material theme for MkDocs
+
+# ==============================================================================
+# NOTES
+# ==============================================================================
+
+# Installation Instructions:
+# 1. First install base requirements:
+#    pip install -r requirements.txt
+#
+# 2. Then install intermediate requirements:
+#    pip install -r requirements_intermediate.txt
+#
+# 3. For faster installation (binary wheels):
+#    pip install -r requirements_intermediate.txt --prefer-binary
+#
+# 4. If you have GPU:
+#    pip install tensorflow-gpu>=2.13.0
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+# System Requirements:
+# - Python 3.8+
+# - 8GB+ RAM (16GB recommended for deep learning)
+# - 5GB+ free disk space
+# - GPU optional but recommended for DL modules (16-19)

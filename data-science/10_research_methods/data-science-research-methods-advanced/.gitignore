@@ -1,0 +1,84 @@
+# Data Science Research Methods - Intermediate
+# .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+conda-env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Data Files
+*.csv
+*.xlsx
+*.h5
+*.hdf5
+*.parquet
+*.pkl
+*.pickle
+data/sample_datasets/*
+data/meta_analysis_data/*
+!data/sample_datasets/.gitkeep
+!data/meta_analysis_data/.gitkeep
+
+# Model Files
+*.model
+*.h5
+*.pt
+*.pth
+*.ckpt
+models/
+
+# Outputs
+notebooks/outputs/*
+!notebooks/outputs/.gitkeep
+results/
+*.png
+*.jpg
+*.pdf
+figures/
+
+# Logs
+*.log
+logs/
+
+# Secrets
+.env
+credentials.json
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary
+*.tmp
+*.bak
+*.cache
+
+# Docker
+.dockerignore
+
+# Documentation builds
+docs/_build/
+site/

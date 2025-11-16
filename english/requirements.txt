@@ -1,0 +1,54 @@
+# English AI-Powered Self-Learning Path - Requirements
+
+# Core dependencies
+jupyter>=1.0.0
+notebook>=6.5.0
+ipywidgets>=8.0.0
+
+# Data handling and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+plotly>=5.14.0
+seaborn>=0.12.0
+
+# Text-to-speech for pronunciation practice
+gtts>=2.3.0
+pyttsx3>=2.90
+
+# Optional: AI API integrations (not required - web interfaces work fine!)
+# openai>=1.0.0          # For ChatGPT API
+# anthropic>=0.18.0      # For Claude API
+
+# Progress tracking and JSON handling
+python-dateutil>=2.8.0
+
+# Web scraping for news articles (optional)
+# beautifulsoup4>=4.12.0
+# requests>=2.31.0
+
+# Testing and quality
+pytest>=7.3.0
+nbqa>=1.7.0
+black>=23.3.0
+isort>=5.12.0
+flake8>=6.0.0
+
+# Notebook utilities
+nbconvert>=7.4.0
+nbformat>=5.9.0
+
+# Audio playback (for pronunciation feedback)
+# pygame>=2.5.0         # Optional: for audio playback
+
+# Spaced repetition algorithms (if implementing custom system)
+# anki>=2.1.0           # Optional
+
+# Optional: Grammar checking (if integrating with Language Tool)
+# language-tool-python>=2.7.0
+
+# Development tools
+# pre-commit>=3.3.0     # For git hooks
+# nbstripout>=0.6.0     # For cleaning notebook outputs

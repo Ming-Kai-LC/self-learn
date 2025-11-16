@@ -1,0 +1,46 @@
+# Data Science Research Skills - Python Dependencies
+
+# Core Scientific Computing
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+ipython>=8.12.0
+
+# Data Manipulation and Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# Statistical Analysis
+scipy>=1.10.0
+statsmodels>=0.14.0
+scikit-learn>=1.3.0
+
+# Paper and Reference Management
+bibtexparser>=1.4.0
+scholarly>=1.7.0
+
+# Web Scraping (for finding papers)
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# PDF Handling
+PyPDF2>=3.0.0
+pdfplumber>=0.9.0
+
+# Reproducibility and Version Control
+gitpython>=3.1.0
+
+# Documentation
+jupyter-book>=0.15.0
+
+# Data Quality and Validation
+great-expectations>=0.17.0
+
+# Utilities
+python-dateutil>=2.8.0
+tqdm>=4.65.0

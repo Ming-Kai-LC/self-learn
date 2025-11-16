@@ -1,0 +1,78 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Temporary/tested notebooks
+*_tested.ipynb
+*_backup*.ipynb
+*_executed.ipynb
+*_verified.ipynb
+
+# Test output files
+*test_summary.txt
+*_SUMMARY.txt
+*TESTING_SUMMARY.md
+
+# Data files (generated data in project folders)
+*.csv
+*.xlsx
+*.xls
+*.json
+*.db
+*.sqlite
+*.sqlite3
+projects/*/data/
+
+# Large ML datasets (should be downloaded separately)
+**/datasets/*.tar.gz
+**/datasets/*.zip
+**/datasets/cifar-10-batches-py/
+**/datasets/MNIST/
+**/datasets/*.h5
+**/datasets/*.hdf5
+cifar-10-python.tar.gz
+MNIST/
+
+# Media files in notebook directories (should be in data/)
+projects/*/notebooks/*.jpg
+projects/*/notebooks/*.jpeg
+projects/*/notebooks/*.png
+projects/*/notebooks/*.gif
+projects/*/notebooks/*.mp4
+projects/*/notebooks/*.avi
+projects/*/notebooks/*.mov
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+nul
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.tar.gz
+**/*.tar.gz
+data-science/06_deep_learning/cnn-learning/data/
+projects-by-topic/machine-learning/cnn-learning/data/

@@ -1,0 +1,57 @@
+# ============================================================================
+# SQL Fundamentals - Requirements
+# Last updated: 2025-01
+# Python 3.8+ required
+# ============================================================================
+
+# ============================================================================
+# Core Environment
+# ============================================================================
+jupyter>=1.0.0
+notebook>=7.0.0
+jupyterlab>=4.0.0
+ipykernel>=6.25.0
+
+# ============================================================================
+# Data Manipulation & Analysis
+# ============================================================================
+pandas>=2.0.0
+numpy>=1.24.0
+
+# ============================================================================
+# Database Connectivity & SQL
+# ============================================================================
+SQLAlchemy>=2.0.0                # SQL toolkit and ORM - multi-database support
+ipython-sql>=0.5.0               # SQL magic commands for Jupyter notebooks
+
+# PostgreSQL adapter (Optional - for PostgreSQL examples)
+psycopg2-binary>=2.9.0           # PostgreSQL database adapter
+
+# MySQL connector (Optional - for MySQL examples)
+pymysql>=1.1.0                   # Pure Python MySQL client
+mysql-connector-python>=8.0.0    # Official MySQL connector
+
+# ============================================================================
+# SQL Utilities
+# ============================================================================
+sqlparse>=0.4.4                  # SQL formatting and parsing
+tabulate>=0.9.0                  # Pretty-print tabular data
+
+# ============================================================================
+# Visualization
+# ============================================================================
+matplotlib>=3.7.0                # Plotting library
+seaborn>=0.12.0                  # Statistical data visualization
+
+# ============================================================================
+# Development & Testing (Optional)
+# ============================================================================
+# pytest>=7.4.0                  # Testing framework
+# black>=23.0.0                  # Code formatting
+# pylint>=2.17.0                 # Code linting
+
+# ============================================================================
+# Additional Utilities
+# ============================================================================
+python-dotenv>=1.0.0             # Environment variable management
+Faker>=19.0.0                    # Generate realistic fake data for examples
