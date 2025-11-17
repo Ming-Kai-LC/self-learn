@@ -80,6 +80,14 @@ The project is organized into modular notebooks, each focusing on specific capab
   - Automated cleanup operations
   - Identify metadata quality issues
 
+- **[Module 99: Complete Workflow](notebooks/99_complete_workflow.ipynb)** - End-to-end library management
+  - Comprehensive workflow combining all modules
+  - Step-by-step library assessment and enhancement
+  - Quality control and organization workflow
+  - Analysis, visualization, and playlist creation
+  - Real-world examples and best practices
+  - Complete library transformation in 90-120 minutes
+
 ## Features
 
 ### Core Functionality
