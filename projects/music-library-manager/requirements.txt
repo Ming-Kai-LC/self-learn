@@ -16,7 +16,10 @@ numpy>=1.20.0          # Numerical operations for charts
 # Phase 6 optional (interactive visualizations)
 # plotly>=5.0.0        # Interactive dashboards (install separately if needed)
 
+# Phase 3 dependencies (implemented)
+Pillow>=8.0.0          # Image processing for album art (Module 03)
+musicbrainzngs>=0.7.1  # MusicBrainz API (Module 05)
+requests>=2.25.0       # HTTP requests for API calls and downloads (Module 05)
+
 # Optional dependencies for future enhancements
-# Pillow>=8.0.0        # Image processing for album art (Phase 3)
-# musicbrainzngs>=0.7.1   # MusicBrainz API (Phase 5)
-# audioread>=2.1.9     # Audio file validation (Phase 8)
+# audioread>=2.1.9     # Audio file validation (future)

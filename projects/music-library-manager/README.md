@@ -30,6 +30,14 @@ The project is organized into modular notebooks, each focusing on specific capab
   - Smart recommendations on which duplicates to keep
   - Comprehensive audio quality reports
 
+- **[Module 03: Album Art Management](notebooks/03_album_art_management.ipynb)** - Extract and manage album artwork
+  - Extract embedded artwork from audio files
+  - Analyze album art quality (resolution, file size, format)
+  - Find files with missing or low-quality artwork
+  - Embed album art into audio files
+  - Batch extract unique artwork collection
+  - Organize artwork by artist/album
+
 - **[Module 04: Advanced Organization](notebooks/04_advanced_organization.ipynb)** - Metadata-based folder structures
   - Organize by Artist/Album hierarchy using metadata
   - Multiple folder templates (Artist/Album, Artist/Year-Album, Genre/Artist/Album, etc.)
@@ -56,11 +64,21 @@ The project is organized into modular notebooks, each focusing on specific capab
   - Playlist validation and integrity checking
   - Merge and manage multiple playlists
 
-### 🔜 Planned Modules (See [ENHANCEMENT_PLAN.md](ENHANCEMENT_PLAN.md))
+- **[Module 05: External API Integration](notebooks/05_external_api_integration.ipynb)** - Enrich metadata from online databases
+  - Query MusicBrainz for authoritative metadata
+  - Automatically download album art from Cover Art Archive
+  - Batch enrich file metadata with correct information
+  - Standardize artist/album names
+  - API best practices (rate limiting, caching, error handling)
+  - Fill in missing release dates and genres
 
-- **Module 03**: Album Art Management
-- **Module 05**: External API Integration (MusicBrainz, Last.fm)
-- **Module 08**: Quality Validation and File Integrity
+- **[Module 08: Quality Validation and File Integrity](notebooks/08_quality_validation.ipynb)** - Health checks and maintenance
+  - Detect corrupted or unreadable audio files
+  - Validate metadata integrity and encoding
+  - Find empty folders and orphaned files
+  - Library health reports and statistics
+  - Automated cleanup operations
+  - Identify metadata quality issues
 
 ## Features
 
