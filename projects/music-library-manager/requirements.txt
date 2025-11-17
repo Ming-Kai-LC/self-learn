@@ -8,10 +8,15 @@ jupyter>=1.0.0         # Jupyter notebook environment
 # Phase 1 & 2 & 4 dependencies (implemented)
 mutagen>=1.45.0        # Audio metadata (ID3 tags) manipulation and audio analysis
 
+# Phase 6 dependencies (visualizations - implemented)
+matplotlib>=3.3.0      # Static visualizations
+seaborn>=0.11.0        # Enhanced statistical plots
+numpy>=1.20.0          # Numerical operations for charts
+
+# Phase 6 optional (interactive visualizations)
+# plotly>=5.0.0        # Interactive dashboards (install separately if needed)
+
 # Optional dependencies for future enhancements
 # Pillow>=8.0.0        # Image processing for album art (Phase 3)
-# matplotlib>=3.3.0    # Visualization of library statistics (Phase 6)
-# seaborn>=0.11.0      # Enhanced visualizations (Phase 6)
-# plotly>=5.0.0        # Interactive visualizations (Phase 6)
 # musicbrainzngs>=0.7.1   # MusicBrainz API (Phase 5)
 # audioread>=2.1.9     # Audio file validation (Phase 8)

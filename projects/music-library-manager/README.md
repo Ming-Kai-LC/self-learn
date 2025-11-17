@@ -38,11 +38,19 @@ The project is organized into modular notebooks, each focusing on specific capab
   - Batch rename files with track numbers
   - Custom template support
 
+- **[Module 06: Library Visualizations](notebooks/06_library_visualizations.ipynb)** - Charts and statistics
+  - Format distribution pie charts
+  - Quality tier bar charts and histograms
+  - Genre and artist ranking visualizations
+  - Bitrate distribution analysis
+  - Library growth timeline
+  - Interactive dashboards (with Plotly)
+  - Comprehensive text and CSV reports
+
 ### 🔜 Planned Modules (See [ENHANCEMENT_PLAN.md](ENHANCEMENT_PLAN.md))
 
 - **Module 03**: Album Art Management
 - **Module 05**: External API Integration (MusicBrainz, Last.fm)
-- **Module 06**: Visualizations and Statistics
 - **Module 07**: Playlist Management
 - **Module 08**: Quality Validation and File Integrity
 
