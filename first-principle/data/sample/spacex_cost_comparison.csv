@@ -1,0 +1,5 @@
+Provider,Launch_Cost_Millions,Year,Cost_Per_Kg_LEO,Reusable
+Space_Shuttle,1500,2011,54500,No
+Traditional_Rocket,65,2002,24000,No
+Falcon_9_Advertised,67,2023,2720,Partial
+Falcon_9_Reused,28,2023,1100,Yes

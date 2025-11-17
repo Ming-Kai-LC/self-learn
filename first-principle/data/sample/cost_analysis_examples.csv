@@ -1,0 +1,9 @@
+Product,Industry,Market_Price,Material_Cost,Material_Percentage,Innovation_Opportunity
+Rocket,Aerospace,65000000,1300000,2.0,98.0
+Battery_Pack,Automotive,600,80,13.3,86.7
+Smartphone,Electronics,1000,300,30.0,70.0
+Athletic_Shoe,Apparel,150,15,10.0,90.0
+Pharmaceutical_Drug,Healthcare,2600000000,50000000,1.9,98.1
+Office_Space,Real_Estate,500000,0,0.0,100.0
+Enterprise_Software,Technology,100000,5000,5.0,95.0
+Tunnel_Construction,Infrastructure,1000000000,50000000,5.0,95.0
