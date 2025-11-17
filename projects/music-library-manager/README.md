@@ -47,11 +47,19 @@ The project is organized into modular notebooks, each focusing on specific capab
   - Interactive dashboards (with Plotly)
   - Comprehensive text and CSV reports
 
+- **[Module 07: Playlist Management](notebooks/07_playlist_management.ipynb)** - Create and manage playlists
+  - Create M3U and M3U8 playlists
+  - Smart playlists by genre, artist, year, quality, album
+  - Random playlist generation with constraints
+  - Discovery playlists (exclude top artists)
+  - Custom filter-based playlists
+  - Playlist validation and integrity checking
+  - Merge and manage multiple playlists
+
 ### 🔜 Planned Modules (See [ENHANCEMENT_PLAN.md](ENHANCEMENT_PLAN.md))
 
 - **Module 03**: Album Art Management
 - **Module 05**: External API Integration (MusicBrainz, Last.fm)
-- **Module 07**: Playlist Management
 - **Module 08**: Quality Validation and File Integrity
 
 ## Features
