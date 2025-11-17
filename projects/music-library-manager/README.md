@@ -2,6 +2,50 @@
 
 A comprehensive Jupyter notebook-based tool for managing, organizing, and maintaining your music collection.
 
+## 📚 Available Modules
+
+The project is organized into modular notebooks, each focusing on specific capabilities:
+
+### ✅ Implemented Modules
+
+- **[Module 00: Music Library Manager](notebooks/00_music_library_manager.ipynb)** - Core functionality
+  - Library scanning and cataloging
+  - Smart search and duplicate detection
+  - Batch rename and move operations
+  - Basic organization tools
+
+- **[Module 01: Metadata Management](notebooks/01_metadata_management.ipynb)** - ID3 tags and metadata
+  - Extract and display ID3 metadata (artist, album, title, genre, year)
+  - Search by metadata fields, not just filenames
+  - Identify files with missing/incomplete metadata
+  - Parse filenames to extract metadata
+  - Batch update and write metadata tags
+  - Metadata quality analysis and reporting
+
+- **[Module 02: Audio Analysis](notebooks/02_audio_analysis.ipynb)** - Quality detection and analysis
+  - Extract audio properties (bitrate, sample rate, duration, channels)
+  - Categorize files by quality tier (Poor/Low/Medium/High/Lossless)
+  - Find low-quality files to upgrade
+  - Enhanced duplicate detection with quality comparison
+  - Smart recommendations on which duplicates to keep
+  - Comprehensive audio quality reports
+
+- **[Module 04: Advanced Organization](notebooks/04_advanced_organization.ipynb)** - Metadata-based folder structures
+  - Organize by Artist/Album hierarchy using metadata
+  - Multiple folder templates (Artist/Album, Artist/Year-Album, Genre/Artist/Album, etc.)
+  - Preview organization before applying changes
+  - Safe file handling with automatic sanitization
+  - Batch rename files with track numbers
+  - Custom template support
+
+### 🔜 Planned Modules (See [ENHANCEMENT_PLAN.md](ENHANCEMENT_PLAN.md))
+
+- **Module 03**: Album Art Management
+- **Module 05**: External API Integration (MusicBrainz, Last.fm)
+- **Module 06**: Visualizations and Statistics
+- **Module 07**: Playlist Management
+- **Module 08**: Quality Validation and File Integrity
+
 ## Features
 
 ### Core Functionality
