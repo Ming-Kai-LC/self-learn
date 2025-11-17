@@ -1,0 +1,74 @@
+# Research Methodology for Data Science - Python Dependencies
+
+# Core Data Science Libraries
+numpy>=1.21.0
+pandas>=1.3.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+scipy>=1.7.0
+
+# Statistical Analysis
+statsmodels>=0.13.0
+scikit-learn>=1.0.0
+pingouin>=0.5.0  # Statistical tests and effect sizes
+
+# Visualization
+plotly>=5.0.0
+graphviz>=0.19.0  # For causal diagrams and flowcharts
+
+# Research and Documentation
+jupyter>=1.0.0
+notebook>=6.4.0
+nbconvert>=6.4.0
+nbformat>=5.1.0
+
+# Literature Management and Text Analysis
+pandas>=1.3.0
+wordcloud>=1.8.0  # For visualizing key concepts
+openpyxl>=3.0.0  # Excel file handling for data extraction
+
+# Reproducibility and Version Control
+jupyter-repo2docker>=2021.8.0
+jupytext>=1.13.0  # Convert notebooks to scripts
+
+# Quality Assurance
+nbqa>=1.2.0
+black>=22.0.0
+isort>=5.10.0
+flake8>=4.0.0
+
+# Data Validation
+great-expectations>=0.15.0  # Data quality validation
+pandera>=0.10.0  # Statistical data validation
+
+# Ethics and Bias Detection
+fairlearn>=0.7.0  # Fairness assessment and mitigation
+aif360>=0.4.0    # AI Fairness 360
+
+# Causal Inference
+dowhy>=0.8.0     # Causal inference library
+networkx>=2.6.0  # For causal DAGs
+
+# Power Analysis
+statsmodels>=0.13.0  # Includes power analysis tools
+
+# Web Scraping (for literature review)
+requests>=2.27.0
+beautifulsoup4>=4.10.0
+
+# Utilities
+python-dateutil>=2.8.0
+tqdm>=4.62.0  # Progress bars
+tabulate>=0.8.0  # Pretty-print tables
+
+# Documentation Generation
+sphinx>=4.4.0
+sphinx-rtd-theme>=1.0.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=3.0.0
+nbval>=0.9.0  # Notebook validation
+
+# Environment Management
+python-dotenv>=0.19.0
