@@ -1,0 +1,12 @@
+# Music Library Manager Dependencies
+
+# Core dependencies
+pandas>=1.3.0          # Data manipulation and display
+ipython>=7.0.0         # Rich display in Jupyter notebooks
+jupyter>=1.0.0         # Jupyter notebook environment
+
+# Optional dependencies for future enhancements
+# mutagen>=1.45.0      # Audio metadata (ID3 tags) manipulation
+# Pillow>=8.0.0        # Image processing for album art
+# matplotlib>=3.3.0    # Visualization of library statistics
+# seaborn>=0.11.0      # Enhanced visualizations
