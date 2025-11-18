@@ -1,0 +1,44 @@
+# Windows Educational Project - Python Dependencies
+
+# Core Data Science Libraries
+jupyter>=1.0.0
+notebook>=6.5.0
+ipykernel>=6.20.0
+
+# Data Manipulation and Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Windows-Specific Libraries
+pywin32>=305; sys_platform == 'win32'  # Windows API access
+psutil>=5.9.0                          # Cross-platform system monitoring
+wmi>=1.5.1; sys_platform == 'win32'    # Windows Management Instrumentation
+
+# Process and Automation
+subprocess32>=3.5.4; python_version < '3.0'
+schedule>=1.1.0                        # Job scheduling
+
+# File and Path Operations
+pathlib2>=2.3.0; python_version < '3.4'
+
+# Visualization (for system monitoring dashboards)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.13.0
+
+# Utilities
+python-dotenv>=1.0.0  # Environment variable management
+colorama>=0.4.6       # Colored terminal output (cross-platform)
+
+# Code Quality (for educational standards)
+black>=23.0.0         # Code formatting
+isort>=5.12.0         # Import sorting
+flake8>=6.0.0         # Linting
+nbqa>=1.6.0           # Apply tools to notebooks
+
+# Testing
+pytest>=7.2.0         # Testing framework
+nbval>=0.9.6          # Notebook validation
+
+# Documentation
+sphinx>=6.0.0         # Documentation generation
