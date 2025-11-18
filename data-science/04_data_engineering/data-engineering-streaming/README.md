@@ -5,14 +5,12 @@
 
 This intermediate-level course builds on data engineering fundamentals to teach you how to build production-grade real-time streaming systems. Through hands-on projects, you'll learn to process continuous data streams, handle events at scale, and implement event-driven architectures using open-source tools.
 
-This course focuses on **practical streaming skills** that
-
- power modern applications:
+This course focuses on **practical streaming skills** that power modern applications:
 - Processing millions of events per second
 - Real-time analytics and monitoring
 - Event-driven microservices
-- Change Data Capture (CDC) pipelines
 - Stateful stream processing
+- Exactly-once processing guarantees
 
 Whether you're scaling from batch ETL to real-time pipelines, building event-driven systems, or adding streaming capabilities to your data platform, this course provides the essential knowledge and hands-on experience.
 
@@ -61,11 +59,11 @@ By completing this course, you will:
 - State management and checkpointing
 
 ### Production Patterns
-- Change Data Capture (CDC)
-- Event sourcing and CQRS
 - Exactly-once processing guarantees
-- Monitoring and debugging streams
-- Performance tuning and scaling
+- Fault tolerance and checkpointing
+- Stateful stream processing
+- Window-based aggregations
+- Stream joins and correlations
 
 ## Project Structure
 
@@ -84,9 +82,6 @@ data-engineering-intermediate-streaming/
 │   ├── 04_apache_flink_basics.ipynb                   # Flink DataStream API (75 min)
 │   ├── 05_advanced_stream_processing.ipynb            # Joins, watermarks (75 min)
 │   ├── 06_state_management_checkpointing.ipynb        # Stateful streams (60 min)
-│   ├── 07_stream_processing_patterns.ipynb            # CDC, event sourcing (60 min)
-│   ├── 08_monitoring_operations.ipynb                 # Observability (60 min)
-│   ├── 09_capstone_realtime_platform.ipynb            # Full streaming platform (120 min)
 │   └── outputs/                       # Generated files and artifacts
 │
 ├── data/                              # Sample data and streams
@@ -350,59 +345,17 @@ This course is designed to be followed sequentially. Each module builds upon con
 
 ---
 
-### Module 07: Stream Processing Patterns (60 minutes)
-**File**: `07_stream_processing_patterns.ipynb`
+### Total Estimated Time: 7-8 hours
 
-- Change Data Capture (CDC)
-  - Debezium integration
-  - Database streaming
-- Event sourcing
-- CQRS (Command Query Responsibility Segregation)
-- Stream-table duality
-- Temporal joins
+## Future Modules (Planned)
 
-**Key Takeaway**: Implement production streaming patterns.
+The following advanced modules are planned for future development:
 
-**Mini-Project**: Event sourcing implementation
+- **Module 07**: Stream Processing Patterns (CDC, Event Sourcing, CQRS)
+- **Module 08**: Monitoring and Operations (Metrics, debugging, performance tuning)
+- **Module 09**: Capstone Project (Complete real-time e-commerce platform)
 
----
-
-### Module 08: Monitoring and Operations (60 minutes)
-**File**: `08_monitoring_operations.ipynb`
-
-- Metrics and monitoring
-  - Kafka metrics (lag, throughput)
-  - Flink metrics (checkpointing, backpressure)
-- Logging best practices
-- Debugging streaming applications
-- Performance tuning
-- Scaling strategies
-
-**Key Takeaway**: Operate and debug production streaming systems.
-
-**Mini-Project**: Observable streaming pipeline with metrics
-
----
-
-### Module 09: Capstone - E-Commerce Real-Time Platform (120 minutes)
-**File**: `09_capstone_realtime_platform.ipynb`
-
-- Capstone project: Build a complete real-time e-commerce platform
-- Components:
-  - Kafka ingestion layer (multiple topics)
-  - Flink processing jobs (inventory, recommendations, fraud detection)
-  - State management and fault tolerance
-  - Real-time dashboards
-  - Alerting system
-- Best practices and production patterns
-- Deployment considerations
-- Performance optimization
-
-**Key Takeaway**: Apply all concepts in a production-like system.
-
----
-
-### Total Estimated Time: 10-12 hours
+**Current Focus**: The 7 existing modules (00-06) provide comprehensive coverage of Kafka and Flink fundamentals, preparing you for production streaming systems. The planned modules will add advanced production patterns and a complete capstone project.
 
 ## How to Use This Project
 
@@ -426,20 +379,20 @@ This course is designed to be followed sequentially. Each module builds upon con
 
 ### Study Schedule Suggestions
 
-**Intensive (2 weeks)**
-- 2-3 modules every 3 days
-- 2-3 hours per session
-- Complete in 10-14 days
+**Intensive (1 week)**
+- 1 module per day
+- 1-1.5 hours per session
+- Complete in 7 days
 
-**Moderate (1 month)**
+**Moderate (2-3 weeks)**
 - 2-3 modules per week
-- 1.5-2 hours per session
-- Complete in 3-4 weeks
+- 1 hour per session
+- Complete in 2-3 weeks
 
-**Relaxed (6 weeks)**
+**Relaxed (4 weeks)**
 - 1-2 modules per week
 - 1 hour per session
-- Complete in 5-6 weeks
+- Complete in 4 weeks
 
 ## Technologies Used
 

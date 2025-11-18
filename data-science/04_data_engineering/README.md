@@ -15,12 +15,13 @@ Data engineering provides the infrastructure that makes data science possible. T
    - Database integration
    - Automation and scheduling
 
-2. **data-engineering-streaming** (15 hours)
+2. **data-engineering-streaming** (7-8 hours) ✅ *Core modules complete*
    - Real-time data processing
    - Apache Kafka fundamentals
    - Stream processing with Flink
    - Event-driven architectures
-   - Real-time analytics
+   - Stateful stream processing
+   - *Future: Advanced patterns (CDC, monitoring, capstone)*
 
 ## Learning Path
 
@@ -28,7 +29,9 @@ Data engineering provides the infrastructure that makes data science possible. T
 1. data-engineering-fundamentals (batch processing)
 2. data-engineering-streaming (real-time processing)
 
-**Time investment:** 2-3 months
+**Time investment:**
+- Current content: 15-18 hours (both projects)
+- With planned streaming modules: 18-22 hours
 
 ## Prerequisites
 
