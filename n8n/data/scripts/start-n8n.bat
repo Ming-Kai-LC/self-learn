@@ -67,8 +67,8 @@ echo ================================================================
 echo.
 
 REM Start n8n
-REM Adjust the path if your Node.js is installed elsewhere
-"%PROGRAMFILES%\nodejs\n8n.cmd"
+REM Uses PATH to find n8n (works with npm global install, nvm, or custom locations)
+n8n
 
 REM If n8n exits, pause so you can see any error messages
 pause
