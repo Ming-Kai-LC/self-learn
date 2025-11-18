@@ -1,0 +1,21 @@
+# English for Career Preparation - Required Packages
+# Install all packages: pip install -r requirements.txt
+
+# Core Jupyter and notebook support
+jupyter>=1.0.0
+notebook>=6.5.0
+ipywidgets>=8.0.0
+
+# Audio generation for pronunciation practice
+gtts>=2.3.0
+
+# Data handling and display
+pandas>=1.5.0
+IPython>=8.0.0
+
+# Optional: Code formatting and quality (recommended)
+black>=23.0.0
+nbqa>=1.6.0
+
+# Optional: For better notebook features
+jupyterlab>=3.6.0
