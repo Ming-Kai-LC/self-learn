@@ -1,0 +1,116 @@
+# ================================================================
+# WSL2 Configuration File for Windows
+# ================================================================
+# This file configures resource limits for WSL2 (Windows Subsystem for Linux)
+# Location: %USERPROFILE%\.wslconfig
+# Example: C:\Users\YourUsername\.wslconfig
+#
+# After creating/editing this file:
+#   1. Save the file
+#   2. Open PowerShell as Administrator
+#   3. Run: wsl --shutdown
+#   4. Restart Docker Desktop or your WSL2 distribution
+# ================================================================
+
+[wsl2]
+
+# ================================================================
+# Memory Configuration
+# ================================================================
+# Limit WSL2 memory usage (prevents WSL2 from consuming all RAM)
+# Default: 50% of total system RAM (can grow to 80%+ on some systems)
+#
+# Recommended values by total system RAM:
+#   - 8 GB total:  memory=3GB or memory=4GB
+#   - 16 GB total: memory=6GB or memory=8GB
+#   - 32 GB total: memory=12GB or memory=16GB
+
+memory=4GB
+
+# ================================================================
+# Processor Configuration
+# ================================================================
+# Limit WSL2 CPU core usage
+# Default: All available CPU cores
+#
+# Recommended values:
+#   - Laptop (battery saving):   processors=2
+#   - Desktop/plugged in:        processors=4
+#   - High-performance server:   processors=8
+
+processors=2
+
+# ================================================================
+# Swap Configuration
+# ================================================================
+# Virtual memory size (when RAM is full)
+# Default: 25% of total memory
+#
+# Recommended: Set to 25-50% of memory setting
+# Example: If memory=4GB, use swap=1GB or swap=2GB
+
+swap=2GB
+
+# Optional: Swap file location
+# Default: %USERPROFILE%\AppData\Local\Temp\swap.vhdx
+# swapFile=C:\\Users\\YourUsername\\wsl-swap.vhdx
+
+# ================================================================
+# Network Configuration
+# ================================================================
+# Enable localhost forwarding (allows accessing WSL services from Windows)
+# Default: true
+# Keep this enabled for n8n to be accessible from Windows browser
+
+localhostForwarding=true
+
+# ================================================================
+# Advanced Settings
+# ================================================================
+
+# Kernel command line parameters
+# kernelCommandLine =
+
+# Page reporting (memory optimization)
+# Disable if you experience performance issues
+# pageReporting=true
+
+# GUI applications support (WSLg)
+# guiApplications=true
+
+# Nested virtualization (for running VMs inside WSL2)
+# nestedVirtualization=false
+
+# ================================================================
+# Performance Tuning Notes
+# ================================================================
+# Conservative (8GB RAM laptop, battery saving):
+#   memory=3GB, processors=2, swap=1GB
+#
+# Balanced (16GB RAM laptop/desktop):
+#   memory=6GB, processors=4, swap=2GB
+#
+# Performance (32GB RAM desktop, plugged in):
+#   memory=12GB, processors=8, swap=4GB
+#
+# High-performance (64GB RAM workstation):
+#   memory=24GB, processors=16, swap=8GB
+# ================================================================
+
+# ================================================================
+# Troubleshooting
+# ================================================================
+# If WSL2/Docker is slow:
+#   - Increase memory allocation
+#   - Ensure you're using WSL2 native filesystem (not /mnt/c/)
+#   - Check that Windows is up to date
+#
+# If WSL2 won't start:
+#   - Verify virtualization is enabled in BIOS
+#   - Run: dism.exe /online /enable-feature /all /norestart /featurename:VirtualMachinePlatform
+#   - Ensure .wslconfig has valid syntax (no typos)
+#
+# If battery life is poor:
+#   - Reduce memory and processors allocation
+#   - Consider using npm installation instead of Docker
+# ================================================================
