@@ -388,7 +388,7 @@ Each remaining module should follow the established pattern:
 ## 📁 File Structure
 
 ```
-/home/user/self-learn/projects/n8n-windows-automation/
+/home/user/self-learn/n8n/
 ├── notebooks/
 │   ├── 00_setup_introduction.ipynb                      ✅ (19KB)
 │   ├── 01_installation_methods_comparison.ipynb         ✅ (29KB)

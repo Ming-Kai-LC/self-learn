@@ -188,29 +188,28 @@
 ---
 
 ### 7. N8N (Workflow Automation)
-**Status**: ⚠️ PARTIAL
+**Status**: ⚠️ PARTIAL (6/11 modules complete)
 **Location**: `/n8n/`
-**Difficulty**: N/A
+**Difficulty**: ⭐ to ⭐⭐⭐
 
 | Component | Status | Details |
 |-----------|--------|---------|
-| 📊 Notebooks | ❌ 0 | None |
-| 📝 README | ❌ | Not present |
-| 📦 Requirements | ❌ | Not present |
+| 📊 Notebooks | ⚠️ 11 (6 complete, 5 planned) | Modules 00-10 |
+| 📝 README | ✅ | Present |
+| 📦 Requirements | ✅ | Present |
 | 📄 Documentation | ✅ | docs/n8n.md (comprehensive Windows setup guide) |
 | 🧪 Tests | ❌ | Not present |
+| 📜 Scripts | ✅ | Docker, batch files for Windows |
 
 **Contents**:
 - docs/n8n.md: Comprehensive guide for setting up n8n on Windows (257 lines)
 - Covers: npm, Docker, WSL2 installation methods, configuration, troubleshooting, security
+- notebooks/: Educational course on n8n Windows automation
+  - ✅ Module 00-05: Complete (setup, installation, configuration, webhooks)
+  - 📝 Module 06-10: Planned (security, performance, autostart, updates, production)
+- scripts/: Docker Compose, batch files, WSL config
 
-**Issues**:
-- Documentation exists but not in educational notebook format
-- Missing README.md, requirements.txt
-- No Jupyter notebooks following portfolio standards
-- Content is guide-style rather than interactive learning modules
-
-**Completeness**: 20% - Has documentation but needs conversion to portfolio format
+**Completeness**: 55% - Core modules complete, advanced topics planned
 
 ---
 
