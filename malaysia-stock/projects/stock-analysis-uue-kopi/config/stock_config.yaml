@@ -1,0 +1,254 @@
+# Stock Analysis Project Configuration
+# Project: UUE Holdings & Oriental Kopi Analysis
+
+# ==========================================
+# Stock Symbols
+# ==========================================
+stocks:
+  uue:
+    ticker: "0310.KL"
+    name: "UUE Holdings Berhad"
+    sector: "Construction"
+    subsector: "Engineering Services"
+    market: "ACE"
+
+  kopi:
+    ticker: "0338.KL"
+    name: "Oriental Kopi Holdings Berhad"
+    sector: "Consumer Products & Services"
+    subsector: "Food & Beverage"
+    market: "ACE"
+
+benchmarks:
+  fbmklci:
+    ticker: "^KLSE"
+    name: "FTSE Bursa Malaysia KLCI"
+  fbmace:
+    ticker: "^ACEMD"
+    name: "ACE Market Index"
+
+# ==========================================
+# Data Collection Settings
+# ==========================================
+data_collection:
+  default_period: "5y"
+  start_date: "2019-01-01"  # Override if needed
+  update_frequency: "daily"
+  update_time: "18:00"  # 6 PM MYT (after market close)
+
+  data_formats:
+    primary: "csv"
+    backup: "parquet"
+
+  validation:
+    min_data_points: 100
+    max_missing_percent: 5.0
+
+# ==========================================
+# Technical Analysis Settings
+# ==========================================
+technical_analysis:
+  moving_averages:
+    - 20
+    - 50
+    - 100
+    - 200
+
+  rsi:
+    period: 14
+    overbought: 70
+    oversold: 30
+
+  macd:
+    fast_period: 12
+    slow_period: 26
+    signal_period: 9
+
+  bollinger_bands:
+    period: 20
+    std_dev: 2
+
+  atr:
+    period: 14
+
+# ==========================================
+# Fundamental Analysis Settings
+# ==========================================
+fundamental_analysis:
+  ratios_to_calculate:
+    profitability:
+      - gross_margin
+      - operating_margin
+      - net_margin
+      - roe
+      - roa
+      - roic
+
+    liquidity:
+      - current_ratio
+      - quick_ratio
+      - cash_ratio
+
+    leverage:
+      - debt_to_equity
+      - interest_coverage
+      - debt_to_assets
+
+    efficiency:
+      - asset_turnover
+      - inventory_turnover
+      - receivables_turnover
+
+  valuation_methods:
+    - dcf
+    - pe_ratio
+    - pb_ratio
+    - ev_ebitda
+    - peg_ratio
+
+# ==========================================
+# Risk Management Settings
+# ==========================================
+risk_management:
+  portfolio:
+    max_single_stock_percent: 10.0
+    max_ace_market_percent: 20.0
+    max_sector_percent: 30.0
+    min_cash_percent: 20.0
+
+  position_sizing:
+    method: "risk_based"  # Options: fixed, volatility, risk_based, kelly
+    risk_per_trade_percent: 1.0
+    max_position_size_percent: 10.0
+
+  stop_loss:
+    default_percent: 15.0
+    ace_market_percent: 20.0
+    trailing_stop_percent: 15.0
+
+  profit_targets:
+    target_1:
+      percent: 20
+      sell_percent: 25
+    target_2:
+      percent: 50
+      sell_percent: 25
+    target_3:
+      percent: 100
+      sell_percent: 25
+
+# ==========================================
+# Alert Settings
+# ==========================================
+alerts:
+  enabled: true
+
+  price_alerts:
+    enabled: true
+    check_frequency: "1h"
+
+  news_alerts:
+    enabled: true
+    keywords:
+      - earnings
+      - dividend
+      - acquisition
+      - merger
+      - contract
+      - revenue
+      - profit warning
+
+  email:
+    enabled: false  # Set to true when configured
+    smtp_server: "smtp.gmail.com"
+    smtp_port: 587
+    # Add credentials in .env file
+
+  telegram:
+    enabled: false  # Set to true when configured
+    # Add bot token and chat_id in .env file
+
+# ==========================================
+# News Monitoring Settings
+# ==========================================
+news_monitoring:
+  sources:
+    - name: "The Edge Markets"
+      url: "https://theedgemalaysia.com"
+      enabled: true
+
+    - name: "Bursa Malaysia"
+      url: "https://www.bursamalaysia.com"
+      enabled: true
+
+    - name: "i3investor"
+      url: "https://klse.i3investor.com"
+      enabled: true
+
+  update_frequency: "4h"
+
+  sentiment_analysis:
+    enabled: true
+    method: "vader"  # Options: vader, textblob, custom
+
+  keywords:
+    uue:
+      - "UUE Holdings"
+      - "0310"
+      - "HDD"
+      - "horizontal directional drilling"
+    kopi:
+      - "Oriental Kopi"
+      - "0338"
+      - "cafe"
+      - "F&B"
+
+# ==========================================
+# Dashboard Settings
+# ==========================================
+dashboard:
+  port: 8501
+  theme: "light"  # Options: light, dark
+  auto_refresh: true
+  refresh_interval: 300  # seconds (5 minutes)
+
+  pages:
+    - overview
+    - uue_analysis
+    - kopi_analysis
+    - technical_signals
+    - news_feed
+    - portfolio_tracker
+
+# ==========================================
+# Backtesting Settings
+# ==========================================
+backtesting:
+  initial_capital: 100000  # RM
+  commission_percent: 0.10  # 0.10% per trade
+  slippage_percent: 0.05
+
+  strategies:
+    - moving_average_crossover
+    - rsi_mean_reversion
+    - macd_trend_following
+    - multi_indicator_combined
+
+# ==========================================
+# Logging Settings
+# ==========================================
+logging:
+  level: "INFO"  # Options: DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/stock_analysis.log"
+  max_file_size: "10MB"
+  backup_count: 5
+
+# ==========================================
+# Development Settings
+# ==========================================
+development:
+  debug_mode: false
+  verbose_output: true
+  cache_enabled: true
+  cache_expiry: 3600  # seconds (1 hour)
