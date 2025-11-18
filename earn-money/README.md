@@ -90,6 +90,49 @@ Learn to write proposals that get responses and land projects.
 
 ---
 
+### Module 04: AI Tools for Productivity
+**Time**: 60 minutes | **Difficulty**: ⭐⭐
+
+Boost your productivity by 40-70% using AI coding assistants.
+
+**You'll learn**:
+- Research-proven productivity gains (55.8% faster)
+- Claude Code workflows for common tasks
+- AI tools comparison (free vs paid)
+- The 60/40 rule (generation vs review)
+- Pricing strategy (capture value, don't discount)
+
+**Key outputs**:
+- AI-assisted development workflows
+- Code review checklist
+- Time savings calculations
+
+**Continue to**: [notebooks/04_ai_tools_for_productivity.ipynb](notebooks/04_ai_tools_for_productivity.ipynb)
+
+---
+
+### Module 05: Project Management & Time Tracking
+**Time**: 50 minutes | **Difficulty**: ⭐⭐
+
+Master time management and handle multiple clients without burnout.
+
+**You'll learn**:
+- Allocating 5 hours/week effectively
+- Managing 2-3 clients simultaneously
+- Preventing scope creep
+- Time tracking systems
+- Avoiding burnout
+
+**Key outputs**:
+- Personal weekly schedule
+- Time tracking spreadsheet
+- Project scope template
+- Client management system
+
+**Continue to**: [notebooks/05_project_management_and_time_tracking.ipynb](notebooks/05_project_management_and_time_tracking.ipynb)
+
+---
+
 ### Module 06: Income Tracking & Malaysian Tax Compliance
 **Time**: 45 minutes | **Difficulty**: ⭐
 
@@ -124,18 +167,20 @@ Stay organized and compliant with Malaysian tax requirements.
 - ☐ Set up Wise payment
 - ☐ Write professional bio
 
-### Day 5-6: Proposals (2 hours)
-- ☐ Complete Module 03
+### Day 5-6: Proposals & AI Tools (3 hours)
+- ☐ Complete Module 03 & 04
 - ☐ Write proposal templates
 - ☐ Study successful profiles
+- ☐ Set up Claude Code (free)
 - ☐ Join r/freelance and r/Upwork
 
-### Day 7: Review (1 hour)
-- ☐ Review progress
+### Day 7: Time Management (1 hour)
+- ☐ Complete Module 05 & 06
+- ☐ Design your weekly schedule
 - ☐ Set up tracking systems
 - ☐ Prepare to start applications next week
 
-**Total Week 1 Time**: ~8 hours (setup week is slightly longer than your regular 5 hrs/week)
+**Total Week 1 Time**: ~9 hours (setup week is slightly longer than your regular 5 hrs/week)
 
 ---
 
@@ -268,10 +313,12 @@ jupyter notebook
 Track your progress against these milestones:
 
 ### Week 1 ✓
-- [ ] Complete Modules 00-03
+- [ ] Complete all modules (00, 01, 02, 03, 04, 05, 06)
 - [ ] Upwork profile 80%+ complete
 - [ ] Wise account set up
 - [ ] 3 portfolio projects ready
+- [ ] Set up Claude Code (free AI assistant)
+- [ ] Design weekly 5-hour schedule
 
 ### Week 2 ✓
 - [ ] Submit 15-20 proposals
@@ -333,9 +380,16 @@ For RM690 monthly payments:
 
 ### Included in This Repository
 - **docs/Self-Earning Money.md**: Comprehensive 13,000-word guide
-- All notebook modules with exercises
+- **7 Complete Learning Modules**: Interactive Jupyter notebooks with exercises
+  - Module 00: Introduction & Goal Setting
+  - Module 01: Portfolio Development
+  - Module 02: Platform Setup
+  - Module 03: Winning Proposals
+  - Module 04: AI Tools for Productivity
+  - Module 05: Project Management & Time Tracking
+  - Module 06: Income Tracking & Malaysian Compliance
 - Tracking spreadsheets (auto-generated)
-- Proposal and profile templates
+- Proposal, profile, and scope templates
 
 ### External Resources
 - [Upwork](https://upwork.com) - Primary platform
@@ -412,11 +466,14 @@ Giving up before submitting 50+ proposals.
 Use this checklist to stay accountable:
 
 **Setup Phase** (Week 1):
-- [ ] Completed all modules (00, 01, 02, 03, 06)
+- [ ] Completed all 7 modules (00-06)
 - [ ] Upwork profile created (80%+ complete)
 - [ ] Wise account set up and verified
 - [ ] 3-5 portfolio projects ready
 - [ ] 2-3 proposal templates created
+- [ ] Claude Code set up (free)
+- [ ] Weekly 5-hour schedule designed
+- [ ] Time tracking system ready
 
 **Application Phase** (Weeks 2-4):
 - [ ] 50+ proposals submitted
