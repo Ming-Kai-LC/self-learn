@@ -7,7 +7,7 @@ Welcome to your comprehensive music library management system! This guide will h
 ### 1. Install Dependencies
 
 ```bash
-cd /home/user/self-learn/projects/music-library-manager
+cd /home/user/self-learn/music/music-library-manager
 pip install -r requirements.txt
 ```
 

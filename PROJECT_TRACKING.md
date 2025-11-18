@@ -217,7 +217,7 @@
 
 #### 8.1 Music Library Manager
 **Status**: ✅ COMPLETE
-**Location**: `/projects/music-library-manager/`
+**Location**: `/music/music-library-manager/`
 **Difficulty**: ⭐⭐ Intermediate
 
 | Component | Status | Details |
