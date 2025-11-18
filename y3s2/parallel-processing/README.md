@@ -38,10 +38,16 @@
 |--------|-------|------------|------|--------|
 | **00** | Course Setup and Introduction | ⭐⭐⭐ | 45 min | ✅ Complete |
 | **01** | Introduction to Distributed Systems | ⭐⭐⭐ | 90 min | ✅ Complete |
-| **02** | System Architectures and Transparency | ⭐⭐⭐ | 90 min | 📝 Planned |
-| **03** | Real-time Systems | ⭐⭐⭐ | 75 min | 📝 Planned |
-| **04** | Clock Synchronization | ⭐⭐⭐ | 75 min | 📝 Planned |
-| **05** | Distributed Operating Systems | ⭐⭐⭐ | 60 min | 📝 Planned |
+| **02** | System Architectures and Transparency | ⭐⭐⭐ | 90 min | ✅ Complete |
+| **03** | Memory Management | ⭐⭐⭐ | 90 min | ✅ Complete |
+| **04** | Clock Synchronization | ⭐⭐⭐ | 75 min | ✅ Complete |
+| **05** | Distributed Operating Systems | ⭐⭐⭐ | 75 min | ✅ Complete |
+| **06** | Concurrency Control | ⭐⭐⭐ | 90 min | ✅ Complete |
+| **07** | Parallel Programming with OpenMP | ⭐⭐⭐ | 120 min | ✅ Complete |
+| **08** | GPU Programming with CUDA | ⭐⭐⭐ | 120 min | ✅ Complete |
+| **09** | Message Passing Interface (MPI) | ⭐⭐⭐ | 90 min | ✅ Complete |
+| **10** | Advanced Distributed Systems Topics | ⭐⭐⭐ | 75 min | ✅ Complete |
+| **11** | Course Review and Final Project | ⭐⭐⭐ | 60 min | ✅ Complete |
 
 ---
 
@@ -128,15 +134,27 @@ parallel-processing/
 - ✅ Geographical distribution benefits
 - ✅ Tightly-coupled vs loosely-coupled systems
 
-### Upcoming Modules
+### Additional Modules
 
-**Module 02**: Distribution architectures, transparency types (access, location, concurrency, replication, failure, migration, performance, scaling)
+**Module 02**: System architectures, transparency types (access, location, concurrency, replication, failure, migration, performance, scaling)
 
-**Module 03**: Real-time systems, controlling vs controlled systems, typical features, distributed real-time systems
+**Module 03**: Memory management (centralized, shared, distributed shared memory), replication vs migration
 
-**Module 04**: Clock synchronization (Cristian's Algorithm, Berkeley Algorithm), network delays, time synchronization challenges
+**Module 04**: Clock synchronization (Cristian's Algorithm, Berkeley Algorithm), Lamport timestamps, logical clocks
 
 **Module 05**: Network OS vs Distributed OS, process/memory/storage management, protection and security
+
+**Module 06**: Concurrency control, race conditions, mutual exclusion, deadlocks, distributed locking
+
+**Module 07**: OpenMP programming model, parallel regions, work sharing, synchronization, optimization
+
+**Module 08**: GPU architecture, CUDA programming, kernel optimization, memory hierarchy
+
+**Module 09**: MPI basics, point-to-point communication, collective operations, parallel algorithms
+
+**Module 10**: Consensus algorithms, replication, consistency models, CAP theorem, distributed transactions
+
+**Module 11**: Course review, final project guidelines, exam preparation
 
 ---
 
