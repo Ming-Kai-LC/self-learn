@@ -887,54 +887,75 @@ Tasks:
 
 ---
 
-### 15. N8N Project - Create or Archive
+### 15. N8N Project - Convert to Portfolio Format or Archive
 
-**Impact**: Clean up empty placeholder
-**Estimated Time**: 3-4 hours OR 5 minutes
+**Impact**: Convert documentation to educational notebooks
+**Estimated Time**: 2-3 hours OR 5 minutes
 **Difficulty**: ⭐⭐ Intermediate OR ⭐ Easy
+**Current Status**: ⚠️ PARTIAL - Has documentation but not in notebook format
 
-**Option A: Create Workflow Automation Project**
+**Option A: Convert Documentation to Educational Notebooks**
 ```
-Create n8n workflow automation learning path.
+Convert existing n8n documentation into educational Jupyter notebook format.
 
 Context:
 - Location: /home/user/self-learn/n8n/
-- Currently has empty docs/ directory
-- n8n is a workflow automation tool (like Zapier)
+- Currently has: docs/n8n.md (comprehensive Windows setup guide, 257 lines)
+- Documentation covers: npm, Docker, WSL2 installation, configuration, troubleshooting, security
+- Missing: README.md, requirements.txt, Jupyter notebooks
 
-Requirements:
-1. Create 8-10 notebooks covering:
-   - 00: Introduction to Workflow Automation
-   - 01: n8n Setup and Configuration
-   - 02: Building Your First Workflow
-   - 03: API Integration Basics
-   - 04: Data Transformation in n8n
-   - 05: Conditional Logic and Branching
-   - 06: Error Handling and Debugging
-   - 07: Python Integration in n8n
-   - 08: Practical Automation Projects
-   - 09: Final Project - Multi-Step Automation
+Tasks:
+1. Create README.md for the project:
+   - Overview of n8n workflow automation
+   - Link to notebooks
+   - Installation prerequisites
+   - Learning path outline
 
-2. Focus Areas:
-   - Practical workflow examples
-   - Integration with common services
-   - Python scripting within n8n
-   - Best practices for automation
+2. Create requirements.txt with dependencies:
+   - docker (if using Docker method)
+   - Any Python libraries for workflow automation examples
 
-Note: This requires n8n installation (Docker or self-hosted).
+3. Convert docs/n8n.md into 8-10 sequential Jupyter notebooks:
+   - 00: Introduction to Workflow Automation and n8n
+   - 01: Installation Methods Comparison (npm, Docker, WSL2)
+   - 02: n8n Setup on Windows - npm Method (hands-on)
+   - 03: n8n Setup on Windows - Docker Method (hands-on)
+   - 04: Initial Configuration and Security Setup
+   - 05: Building Your First Workflow
+   - 06: Webhook Setup and Testing
+   - 07: Common Troubleshooting Issues
+   - 08: Performance Optimization for Windows
+   - 09: Final Project - Complete Automation Workflow
+
+4. Quality Standards:
+   - Follow .claude/CLAUDE.md guidelines
+   - 30%+ markdown content with explanations
+   - Include step-by-step installation instructions
+   - Add screenshots or diagrams where helpful
+   - 3+ exercises per major concept
+   - Code cells with PowerShell/Bash commands for setup
+   - Hands-on configuration examples
+
+5. Structure notebooks to be executable:
+   - Use %%bash or %%powershell magic commands for shell operations
+   - Include verification steps after each installation step
+   - Add troubleshooting sections with common errors
+
+Note: Leverage existing comprehensive documentation in docs/n8n.md as source material.
 ```
 
 **Option B: Archive the Directory**
 ```
-Remove the empty n8n/ directory and update PROJECT_TRACKING.md.
+Remove the n8n/ directory and update PROJECT_TRACKING.md.
 
 Tasks:
 1. Delete /home/user/self-learn/n8n/ directory
-2. Update PROJECT_TRACKING.md
-3. Commit: [Root] Remove: Empty n8n placeholder directory
+2. Update PROJECT_TRACKING.md to remove n8n from tracking
+3. Update summary statistics
+4. Commit: [Root] Remove: n8n project (documentation only, not portfolio format)
 ```
 
-**Recommendation**: Choose Option B (archive) unless you specifically need workflow automation training.
+**Recommendation**: Choose Option A if you value workflow automation skills and want n8n installation knowledge in your portfolio. Choose Option B to focus on core data science modules instead.
 
 ---
 
