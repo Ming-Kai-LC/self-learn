@@ -1,0 +1,174 @@
+# Stock Analysis Project - Python Dependencies
+# Project: UUE Holdings & Oriental Kopi Analysis
+# Last Updated: 2025-11-18
+
+# ==========================================
+# Core Data Science Libraries
+# ==========================================
+numpy>=1.26.3
+pandas>=2.2.0
+scipy>=1.12.0
+
+# ==========================================
+# Data Collection & APIs
+# ==========================================
+yfinance>=0.2.36
+requests>=2.31.0
+urllib3>=2.1.0
+
+# ==========================================
+# Web Scraping & News Collection
+# ==========================================
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+selenium>=4.17.2
+feedparser>=6.0.11
+
+# ==========================================
+# Technical Analysis
+# ==========================================
+TA-Lib>=0.4.28
+pandas-ta>=0.3.14b0
+stockstats>=0.6.2
+ta>=0.11.0
+
+# ==========================================
+# Visualization
+# ==========================================
+matplotlib>=3.8.2
+seaborn>=0.13.1
+plotly>=5.18.0
+mplfinance>=0.12.10b0
+kaleido>=0.2.1
+
+# ==========================================
+# Interactive Dashboards
+# ==========================================
+streamlit>=1.31.0
+dash>=2.14.2
+dash-bootstrap-components>=1.5.0
+
+# ==========================================
+# Natural Language Processing & Sentiment
+# ==========================================
+textblob>=0.17.1
+vaderSentiment>=3.3.2
+nltk>=3.8.1
+spacy>=3.7.2
+
+# ==========================================
+# Machine Learning (Optional)
+# ==========================================
+scikit-learn>=1.4.0
+statsmodels>=0.14.1
+
+# ==========================================
+# Database & Data Storage
+# ==========================================
+sqlalchemy>=2.0.25
+psycopg2-binary>=2.9.9
+pymongo>=4.6.1
+
+# ==========================================
+# Scheduling & Automation
+# ==========================================
+schedule>=1.2.1
+APScheduler>=3.10.4
+
+# ==========================================
+# File Handling & Parsing
+# ==========================================
+openpyxl>=3.1.2
+xlrd>=2.0.1
+PyPDF2>=3.0.1
+pdfplumber>=0.11.0
+python-docx>=1.1.0
+
+# ==========================================
+# Configuration & Environment
+# ==========================================
+python-dotenv>=1.0.1
+pyyaml>=6.0.1
+configparser>=6.0.0
+
+# ==========================================
+# Jupyter & Notebooks
+# ==========================================
+jupyter>=1.0.0
+jupyterlab>=4.0.11
+ipykernel>=6.29.0
+ipywidgets>=8.1.1
+notebook>=7.0.7
+
+# ==========================================
+# Testing & Quality
+# ==========================================
+pytest>=8.0.0
+pytest-cov>=4.1.0
+black>=24.1.1
+flake8>=7.0.0
+isort>=5.13.2
+nbstripout>=0.7.1
+
+# ==========================================
+# Notification & Alerts
+# ==========================================
+python-telegram-bot>=20.7
+twilio>=8.12.0
+
+# ==========================================
+# HTTP & Networking
+# ==========================================
+httpx>=0.26.0
+aiohttp>=3.9.3
+
+# ==========================================
+# Utilities
+# ==========================================
+tqdm>=4.66.1
+python-dateutil>=2.8.2
+pytz>=2024.1
+holidays>=0.40
+
+# ==========================================
+# Logging & Monitoring
+# ==========================================
+loguru>=0.7.2
+
+# ==========================================
+# Financial Data & Analysis
+# ==========================================
+investpy>=1.0.8
+alpha-vantage>=2.3.1
+fredapi>=0.5.1
+
+# ==========================================
+# Performance & Optimization
+# ==========================================
+numba>=0.59.0
+joblib>=1.3.2
+
+# ==========================================
+# Cloud Storage (Optional)
+# ==========================================
+# boto3>=1.34.34  # AWS S3
+# google-cloud-storage>=2.14.0  # Google Cloud
+
+# ==========================================
+# Notes
+# ==========================================
+# - Install TA-Lib separately based on your OS:
+#   - Linux: sudo apt-get install ta-lib
+#   - Mac: brew install ta-lib
+#   - Windows: Download from https://github.com/cgohlke/talib-build/releases
+#
+# - For Telegram alerts, create a bot via @BotFather
+# - For Twilio SMS, sign up at https://www.twilio.com
+#
+# - Recommended: Create a virtual environment first
+#   python -m venv venv
+#   source venv/bin/activate  # Linux/Mac
+#   venv\Scripts\activate  # Windows
+#
+# - Install all dependencies:
+#   pip install -r requirements.txt

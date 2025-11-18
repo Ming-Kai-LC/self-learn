@@ -1,0 +1,215 @@
+# Stock Analysis Project - Git Ignore File
+# Project: UUE Holdings & Oriental Kopi Analysis
+
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv/
+
+# ==========================================
+# Jupyter Notebook
+# ==========================================
+.ipynb_checkpoints/
+*_tested.ipynb
+*-checkpoint.ipynb
+*.nbconvert.ipynb
+
+# ==========================================
+# Data Files (Large)
+# ==========================================
+# Ignore large datasets
+data/raw/*.csv
+data/raw/*.parquet
+data/raw/*.feather
+data/processed/*.csv
+data/processed/*.parquet
+
+# Keep small sample files
+!data/sample/*.csv
+
+# Ignore downloaded PDFs (annual reports can be large)
+data/financial_statements/*.pdf
+!data/financial_statements/README.md
+
+# Ignore scraped news data
+data/news/*.json
+data/news/*.csv
+!data/news/README.md
+
+# ==========================================
+# Database Files
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+
+# ==========================================
+# Configuration & Secrets
+# ==========================================
+.env
+.env.local
+.env.*.local
+config/secrets.yaml
+config/api_keys.yaml
+*.key
+*.pem
+*.p12
+
+# Keep template configs
+!config/config.template.yaml
+!config/README.md
+
+# ==========================================
+# IDE & Editor Files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+*.tmp
+*.temp
+logs/
+*.out
+*.err
+
+# ==========================================
+# Testing
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# ==========================================
+# Documentation Builds
+# ==========================================
+docs/_build/
+site/
+
+# ==========================================
+# OS Generated Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# Package Files
+# ==========================================
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# ==========================================
+# Sensitive Analysis Files
+# ==========================================
+# Personal notes (may contain private investment decisions)
+PERSONAL_NOTES.md
+MY_TRADES.xlsx
+PORTFOLIO.xlsx
+
+# Backup files
+*.bak
+*.backup
+
+# ==========================================
+# Dashboard Deployment
+# ==========================================
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+# ==========================================
+# Cache Directories
+# ==========================================
+.cache/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+
+# ==========================================
+# Custom Rules for This Project
+# ==========================================
+# Scraped data can be regenerated
+scraped_data/
+
+# Alert system logs
+alerts/*.log
+
+# Backtesting results (can be large)
+backtests/results/*.csv
+backtests/results/*.pkl
+
+# Model files
+models/*.pkl
+models/*.h5
+models/*.pt
+
+# ==========================================
+# Keep Important Empty Directories
+# ==========================================
+!data/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/financial_statements/.gitkeep
+!data/news/.gitkeep
+!data/analysis_reports/.gitkeep
+!scripts/.gitkeep
+!notebooks/.gitkeep
+!dashboards/.gitkeep
+!tests/.gitkeep
+!config/.gitkeep
