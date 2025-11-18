@@ -756,7 +756,7 @@ Context:
   1. earn-money
   2. first-principle
   3. research-methodology
-  4. projects/music-library-manager
+  4. music/music-library-manager
 - All are complete projects that need quality assurance
 
 Requirements:
@@ -839,7 +839,7 @@ Create a comprehensive Music Theory and Production learning path.
 Context:
 - Location: /home/user/self-learn/music/
 - Currently empty (only .gitkeep)
-- Related to music-library-manager in projects/ folder
+- Related to music-library-manager in music/ folder
 - Could complement that project
 
 Requirements:

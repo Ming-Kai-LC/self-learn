@@ -39,8 +39,8 @@ project-name/
 # Clone the repository (if not already done)
 git clone <repository-url>
 
-# Navigate to project directory
-cd projects/project-name
+# Navigate to project directory (within appropriate topic folder)
+cd topic-name/project-name
 
 # Create virtual environment
 python -m venv venv

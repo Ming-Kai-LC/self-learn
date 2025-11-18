@@ -171,30 +171,42 @@ Skills auto-activate based on keywords, or invoke explicitly:
 ## Project Structure
 
 ```
-python-projects-portfolio/
+self-learn/
 ├── .claude/
 │   ├── agents/              # Sub-agent definitions
 │   ├── output-styles/       # Teaching mode configurations
 │   ├── skills/              # Domain expertise and patterns
+│   ├── templates/           # Project templates
+│   ├── scripts/             # Utility scripts
 │   ├── CLAUDE.md           # This file (project instructions)
 │   └── settings.local.json  # Local configuration
-├── projects/
-│   ├── malaysia-stock-technical-analysis/
-│   │   ├── notebooks/       # Educational notebooks (00-10)
-│   │   ├── data/            # Sample datasets
-│   │   │   ├── raw/         # Original data
-│   │   │   ├── processed/   # Cleaned data
-│   │   │   └── sample/      # Small examples (<10MB)
-│   │   ├── requirements.txt # Dependencies
-│   │   └── README.md        # Project documentation
-│   ├── data-science-fundamentals/
-│   ├── english-learning/
-│   └── [23 more projects...]
-├── .flake8                  # Linting configuration
-├── .pre-commit-config.yaml  # Git hooks configuration
+├── data-science/            # Data science topic (12 subcategories)
+│   ├── 00_tools_and_foundations/
+│   ├── 01_mathematics/
+│   ├── 02_data_manipulation/
+│   ├── 03_visualization/
+│   └── ... (other subcategories)
+├── malaysia-stock/          # Stock market technical analysis
+│   ├── notebooks/           # Educational notebooks (00-10)
+│   ├── data/                # Sample datasets
+│   │   ├── raw/             # Original data
+│   │   ├── processed/       # Cleaned data
+│   │   └── sample/          # Small examples (<10MB)
+│   ├── requirements.txt     # Dependencies
+│   └── README.md            # Project documentation
+├── english/                 # English language learning
+├── first-principle/         # First principles thinking
+├── research-methodology/    # Research methods and skills
+├── earn-money/              # Business and income projects
+├── music/                   # Music-related projects
+├── n8n/                     # n8n automation workflows
 ├── .gitignore              # Ignore patterns
-└── requirements.txt         # Root dependencies
+├── COMPLETION_PROMPTS.md    # Project completion templates
+├── PROJECT_TRACKING.md      # Project status tracking
+└── Jupyter-Notebook.md      # Jupyter notebook guidelines
 ```
+
+**Repository Organization Rule**: The root folder contains only topic-specific folders. Each topic folder contains its own projects, notebooks, data, and documentation.
 
 ## File Naming Conventions
 

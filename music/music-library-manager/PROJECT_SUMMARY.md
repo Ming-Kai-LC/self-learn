@@ -334,7 +334,7 @@ Each module includes:
 ### Installation
 ```bash
 # Clone or navigate to project
-cd /home/user/self-learn/projects/music-library-manager
+cd /home/user/self-learn/music/music-library-manager
 
 # Install dependencies
 pip install -r requirements.txt
