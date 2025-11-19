@@ -67,7 +67,9 @@ By the end of this course, you will be able to:
 github-learning/
 ├── 📄 README.md                          # This comprehensive guide
 ├── 📄 requirements.txt                   # Python dependencies
-├── 📁 notebooks/                         # All learning materials (30-40 hours)
+├── 📁 notebooks/                         # All learning materials (40-50 hours)
+│   │
+│   │   CORE CURRICULUM (00-08):
 │   ├── 📓 00_setup_and_introduction.ipynb       # 1-2 hours
 │   ├── 📓 01_git_fundamentals.ipynb             # 3-4 hours
 │   ├── 📓 02_github_essentials.ipynb            # 3-4 hours
@@ -77,6 +79,13 @@ github-learning/
 │   ├── 📓 06_github_actions_intro.ipynb         # 4-5 hours
 │   ├── 📓 07_advanced_github_features.ipynb     # 4-5 hours
 │   ├── 📓 08_final_project.ipynb                # 5-8 hours
+│   │
+│   │   SUPPLEMENTARY MODULES (09-12):
+│   ├── 📓 09_resolving_merge_conflicts.ipynb    # 1.5-2 hours
+│   ├── 📓 10_git_best_practices.ipynb           # 1.5-2 hours
+│   ├── 📓 11_git_for_data_science.ipynb         # 2-2.5 hours
+│   ├── 📓 12_github_pages_and_portfolio.ipynb   # 2-2.5 hours
+│   │
 │   └── 📁 outputs/                              # Generated files
 ├── 📁 data/                              # Sample repositories and configs
 │   └── 📁 sample_repos/                  # Practice repositories
@@ -87,7 +96,10 @@ github-learning/
     └── 🔧 setup_helpers.py               # Configuration helpers
 ```
 
-**Total Learning Time**: 30-40 hours (can be completed in 4-8 weeks at a comfortable pace)
+**Total Learning Time**:
+- **Core Curriculum** (00-08): 30-40 hours
+- **Supplementary Modules** (09-12): 7-9 hours
+- **Complete Course**: 37-49 hours (can be completed in 5-10 weeks at a comfortable pace)
 
 ---
 
@@ -459,6 +471,116 @@ A complete portfolio-ready project that demonstrates all your Git and GitHub ski
 **Real-World Application**: Showcasing your skills to employers, contributing to open source
 
 **Deliverable**: A polished GitHub repository demonstrating professional Git/GitHub practices
+
+---
+
+## Supplementary Modules (Advanced Topics)
+
+These optional modules provide deep dives into specialized topics and are designed to complement the core curriculum. They can be completed in any order after finishing Modules 03-04.
+
+---
+
+### Module 09: Resolving Merge Conflicts - Deep Dive (1.5-2 hours)
+**File**: `09_resolving_merge_conflicts.ipynb`
+**Difficulty**: Intermediate
+
+**What You'll Learn**:
+- Understand what merge conflicts are and why they occur
+- Read and interpret conflict markers
+- Resolve conflicts manually and with merge tools
+- Handle special conflicts (binary files, notebooks, data files)
+- Implement strategies to prevent conflicts
+- Recover from failed merge attempts
+
+**Key Topics**:
+- Anatomy of conflict markers
+- Different types of conflicts (content, modify/delete)
+- Aborting merges safely
+- Data science-specific conflicts (Jupyter notebooks, CSV files)
+- Using merge tools (VS Code, KDiff3, Meld)
+
+**Real-World Application**: Essential for team collaboration, especially in data science where notebook conflicts are common
+
+**Practice Exercises**: Create and resolve intentional conflicts in safe practice environments
+
+---
+
+### Module 10: Git Best Practices - Professional Workflows (1.5-2 hours)
+**File**: `10_git_best_practices.ipynb`
+**Difficulty**: Intermediate
+
+**What You'll Learn**:
+- Write clear, professional commit messages following conventions
+- Create and maintain effective .gitignore files
+- Apply branch naming conventions
+- Organize repositories for collaboration
+- Use Git hooks to automate quality checks
+- Implement semantic versioning and tagging
+
+**Key Topics**:
+- Conventional Commits standard
+- Data science .gitignore templates
+- Git workflow strategies (GitHub Flow, Git Flow, Trunk-Based)
+- Pre-commit hooks setup
+- Code review best practices
+- Keeping Git history clean
+
+**Real-World Application**: Professional development practices that employers expect
+
+**Practice Exercises**: Set up a complete best-practices workflow for a data science project
+
+---
+
+### Module 11: Git for Data Science - Specialized Workflows (2-2.5 hours)
+**File**: `11_git_for_data_science.ipynb`
+**Difficulty**: Intermediate
+
+**What You'll Learn**:
+- Version control Jupyter notebooks effectively with nbstripout
+- Handle large datasets using Git LFS
+- Implement data versioning with DVC
+- Manage machine learning models in Git
+- Track experiments and model versions
+- Set up data science-specific Git workflows
+
+**Key Topics**:
+- nbstripout and nbdime for notebooks
+- Git LFS (Large File Storage) configuration
+- DVC (Data Version Control) setup and usage
+- Model versioning strategies
+- DVC pipelines for reproducible ML
+- Team collaboration on data science projects
+
+**Real-World Application**: Essential for data scientists working with large datasets and ML models
+
+**Practice Exercises**: Version a complete data science project with datasets, notebooks, and models
+
+---
+
+### Module 12: GitHub Pages and Portfolio Hosting (2-2.5 hours)
+**File**: `12_github_pages_and_portfolio.ipynb`
+**Difficulty**: Intermediate
+
+**What You'll Learn**:
+- Create a personal portfolio website with GitHub Pages
+- Host project documentation sites
+- Use Jekyll for static site generation
+- Customize themes and layouts
+- Set up custom domains
+- Showcase data science projects effectively
+- Optimize your portfolio for employers
+
+**Key Topics**:
+- GitHub Pages setup and configuration
+- Static site creation (HTML/CSS and Jekyll)
+- Project documentation templates
+- Portfolio design best practices
+- Custom domain configuration
+- SEO and analytics
+
+**Real-World Application**: Build your professional brand and showcase your work to potential employers
+
+**Practice Exercises**: Create a complete portfolio website showcasing your data science projects
 
 ---
 
