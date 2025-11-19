@@ -1,0 +1,33 @@
+# Mathematics for Malaysian Stock Trading
+# Core dependencies for mathematical stock analysis
+
+# Data handling and manipulation
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Stock data acquisition
+yfinance>=0.2.0
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Jupyter notebook
+jupyter>=1.0.0
+ipykernel>=6.16.0
+
+# Code quality (for development)
+black>=22.0.0
+isort>=5.10.0
+flake8>=5.0.0
+nbqa>=1.5.0
+
+# Notebook testing
+nbconvert>=7.0.0
+nbstripout>=0.6.0
+
+# Optional: Enhanced visualizations
+plotly>=5.11.0
+
+# Optional: Statistical analysis
+scipy>=1.9.0
