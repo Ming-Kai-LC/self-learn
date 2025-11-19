@@ -1,6 +1,6 @@
 # Big Data with PySpark - Dependencies
 
-# Apache Spark
+# Apache Spark (includes MLlib, SQL, Streaming)
 pyspark>=3.4.0
 
 # Data manipulation
@@ -10,6 +10,7 @@ pandas>=2.0.0
 # Visualization
 matplotlib>=3.7.0
 seaborn>=0.12.0
+plotly>=5.14.0  # For interactive visualizations
 
 # Jupyter
 jupyter>=1.0.0
@@ -17,12 +18,21 @@ jupyterlab>=4.0.0
 ipywidgets>=8.0.0
 
 # Additional Spark libraries
-pyarrow>=12.0.0  # For improved performance
-findspark>=2.0.0  # For Spark configuration
+pyarrow>=12.0.0  # For improved performance with Parquet files
+findspark>=2.0.0  # For easy Spark configuration in Jupyter
 
-# Optional: Cloud integration
+# Machine Learning (complementary to MLlib)
+scikit-learn>=1.3.0  # For comparison and preprocessing utilities
+
+# Data generation and utilities
+faker>=19.0.0  # For generating sample datasets
+tqdm>=4.65.0  # For progress bars
+
+# Testing and quality
+pytest>=7.4.0  # For notebook testing
+nbqa>=1.7.0  # For notebook quality checks
+
+# Optional: Cloud integration (uncomment if needed)
 # boto3>=1.28.0  # For AWS S3
-# azure-storage-blob>=12.17.0  # For Azure
-
-# Utilities
-tqdm>=4.65.0
+# azure-storage-blob>=12.17.0  # For Azure Blob Storage
+# google-cloud-storage>=2.10.0  # For Google Cloud Storage
