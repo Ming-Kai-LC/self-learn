@@ -1,0 +1,98 @@
+# GitHub Actions Workflow for Scheduled Model Retraining
+# Used in Module 09: Model Retraining Pipelines
+# Automatically retrain model on schedule or when triggered
+
+name: Scheduled Model Retraining
+
+on:
+  # Schedule: Run every Monday at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * 1'
+
+  # Manual trigger
+  workflow_dispatch:
+    inputs:
+      force_retrain:
+        description: 'Force retraining even if performance is acceptable'
+        required: false
+        default: 'false'
+
+jobs:
+  check-drift:
+    runs-on: ubuntu-latest
+    outputs:
+      needs_retraining: ${{ steps.drift_detection.outputs.needs_retraining }}
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+        pip install evidently
+
+    - name: Check for data drift
+      id: drift_detection
+      run: |
+        python scripts/detect_drift.py --output drift_report.json
+        NEEDS_RETRAINING=$(python -c "import json; print(json.load(open('drift_report.json'))['needs_retraining'])")
+        echo "needs_retraining=$NEEDS_RETRAINING" >> $GITHUB_OUTPUT
+
+    - name: Upload drift report
+      uses: actions/upload-artifact@v3
+      with:
+        name: drift-report
+        path: drift_report.json
+
+  retrain-model:
+    runs-on: ubuntu-latest
+    needs: check-drift
+    if: needs.check-drift.outputs.needs_retraining == 'true' || github.event.inputs.force_retrain == 'true'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Fetch latest training data
+      run: python scripts/fetch_training_data.py
+
+    - name: Train new model
+      env:
+        MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+      run: |
+        python scripts/train_model.py --experiment-name scheduled-retraining
+
+    - name: Evaluate new model vs current production
+      id: evaluation
+      run: |
+        python scripts/compare_models.py --output comparison.json
+        IS_BETTER=$(python -c "import json; print(json.load(open('comparison.json'))['new_model_is_better'])")
+        echo "is_better=$IS_BETTER" >> $GITHUB_OUTPUT
+
+    - name: Promote model if better
+      if: steps.evaluation.outputs.is_better == 'true'
+      run: |
+        python scripts/promote_model.py --stage production
+
+    - name: Notify team
+      uses: 8398a7/action-slack@v3
+      with:
+        status: ${{ job.status }}
+        text: |
+          Retraining completed!
+          New model is better: ${{ steps.evaluation.outputs.is_better }}
+        webhook_url: ${{ secrets.SLACK_WEBHOOK }}
