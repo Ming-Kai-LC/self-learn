@@ -1,0 +1,71 @@
+# Docker ignore file for ML projects
+# Excludes unnecessary files from Docker build context
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# MLflow
+mlruns/
+mlartifacts/
+
+# Data files (use volumes instead)
+data/raw/*
+data/processed/*
+*.csv
+*.parquet
+*.h5
+*.hdf5
+
+# Model artifacts (use volumes or registry)
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.h5
+*.pb
+
+# Logs
+logs/
+*.log
+
+# Tests
+tests/
+.pytest_cache/
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CI/CD
+.github/
+.gitlab-ci.yml

@@ -1,0 +1,78 @@
+# Docker Compose for ML Application Stack
+# Used in Module 05: Containerization with Docker
+
+version: '3.8'
+
+services:
+  # ML Model API
+  ml-api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.optimized
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_PATH=/app/models/model.pkl
+      - LOG_LEVEL=info
+    volumes:
+      - ../models:/app/models:ro
+      - ../logs:/app/logs
+    depends_on:
+      - mlflow
+    networks:
+      - ml-network
+    restart: unless-stopped
+
+  # MLflow Tracking Server
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "5000:5000"
+    environment:
+      - MLFLOW_BACKEND_STORE_URI=sqlite:///mlflow/mlflow.db
+      - MLFLOW_ARTIFACT_ROOT=/mlflow/artifacts
+    volumes:
+      - mlflow-data:/mlflow
+    networks:
+      - ml-network
+    command: mlflow server --host 0.0.0.0 --port 5000
+    restart: unless-stopped
+
+  # Prometheus for Monitoring
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    networks:
+      - ml-network
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+    restart: unless-stopped
+
+  # Grafana for Visualization
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    networks:
+      - ml-network
+    restart: unless-stopped
+
+volumes:
+  mlflow-data:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  ml-network:
+    driver: bridge

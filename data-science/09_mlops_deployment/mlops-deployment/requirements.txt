@@ -27,10 +27,12 @@ cloudpickle>=2.2.0
 
 # Monitoring
 prometheus-client>=0.17.0
+evidently>=0.4.0  # Model monitoring and drift detection
 
 # Testing
 pytest>=7.4.0
 httpx>=0.24.0  # For FastAPI testing
+great-expectations>=0.18.0  # Data validation
 
 # Environment management
 python-dotenv>=1.0.0
@@ -38,9 +40,23 @@ python-dotenv>=1.0.0
 # Logging
 loguru>=0.7.0
 
+# Model serialization
+onnx>=1.14.0
+onnxruntime>=1.15.0
+skl2onnx>=1.15.0
+
+# Data drift detection
+scipy>=1.11.0
+scikit-multiflow>=0.5.3
+
 # Optional: Container management
 # docker>=6.1.0
 
 # Jupyter (for documentation)
 jupyter>=1.0.0
 jupyterlab>=4.0.0
+
+# Visualization for monitoring
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
