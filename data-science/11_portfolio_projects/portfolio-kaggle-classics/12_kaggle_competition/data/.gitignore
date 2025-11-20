@@ -1,0 +1,39 @@
+# Ignore all data files in raw, processed, and submissions directories
+# Only keep directory structure
+
+# Raw data (downloaded from Kaggle)
+raw/*.csv
+raw/*.txt
+raw/*.zip
+
+# Processed data
+processed/*.csv
+processed/*.pkl
+processed/*.parquet
+
+# Submissions
+submissions/*.csv
+
+# Sample data (keep small samples < 10MB)
+# Uncomment below if you have large sample files
+# sample/*.csv
+
+# Keep directory structure
+!raw/.gitkeep
+!processed/.gitkeep
+!sample/.gitkeep
+!submissions/.gitkeep
+
+# Models (usually large)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
+
+# Jupyter checkpoint files
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
