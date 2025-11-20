@@ -1,0 +1,19 @@
+# 911 Calls EDA - Python Dependencies
+
+# Core Data Science
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
+
+# Optional: Geographic visualization
+# folium>=0.12.0
+
+# Utilities
+scipy>=1.7.0
