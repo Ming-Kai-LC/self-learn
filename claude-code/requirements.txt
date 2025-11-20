@@ -1,0 +1,39 @@
+# Claude Code Learning Project - Python Dependencies
+
+# Core notebook dependencies
+jupyter>=1.0.0
+notebook>=7.0.0
+ipython>=8.12.0
+
+# Code quality and formatting
+black>=23.0.0
+isort>=5.12.0
+flake8>=6.0.0
+nbqa>=1.7.0  # Apply code quality tools to notebooks
+nbstripout>=0.6.0  # Remove notebook outputs before commit
+
+# Markdown and documentation
+markdown>=3.4.0
+nbconvert>=7.0.0  # Convert notebooks to other formats
+
+# Visualization (for example notebooks)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Utilities
+python-dotenv>=1.0.0  # Environment variable management
+pyyaml>=6.0  # YAML parsing (for configs)
+requests>=2.31.0  # HTTP requests (for API examples)
+
+# Optional: Web scraping (for MCP server examples)
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Optional: Database examples (for MCP server module)
+# Uncomment if needed
+# sqlalchemy>=2.0.0
+# psycopg2-binary>=2.9.0
+
+# Development tools
+pytest>=7.3.0  # Testing
+pytest-cov>=4.1.0  # Coverage reporting
