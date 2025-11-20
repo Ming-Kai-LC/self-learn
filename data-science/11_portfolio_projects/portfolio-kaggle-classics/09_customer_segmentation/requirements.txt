@@ -1,0 +1,19 @@
+# Data manipulation and analysis
+pandas>=1.5.0
+numpy>=1.23.0
+
+# Visualization
+matplotlib>=3.6.0
+seaborn>=0.12.0
+
+# Machine learning
+scikit-learn>=1.2.0
+scipy>=1.10.0
+
+# Jupyter environment
+jupyter>=1.0.0
+notebook>=6.5.0
+
+# Optional but recommended
+ipywidgets>=8.0.0  # For interactive visualizations
+openpyxl>=3.0.0    # For Excel file support
