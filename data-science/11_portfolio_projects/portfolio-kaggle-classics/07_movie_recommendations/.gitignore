@@ -1,0 +1,67 @@
+# MovieLens Dataset Files (large files - download separately)
+data/ml-100k/*
+data/ml-1m/*
+!data/ml-100k/.gitkeep
+!data/ml-1m/.gitkeep
+!data/README.md
+
+# Compressed dataset archives
+*.zip
+*.tar.gz
+*.tgz
+
+# Data files
+*.csv
+*.dat
+*.txt
+!requirements.txt
+!README.md
+
+# Model files (generated during training)
+models/
+*.pkl
+*.joblib
+*.h5
+*.hdf5
+*.pt
+*.pth
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*_tested.ipynb
+*-checkpoint.ipynb
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Logs
+*.log
+logs/
