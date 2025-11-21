@@ -1,0 +1,75 @@
+# Django Fundamentals - Requirements
+# Python 3.8+ required
+
+# =====================================
+# Core Django Framework
+# =====================================
+Django>=4.2,<5.0
+# High-level Python web framework
+
+# =====================================
+# Jupyter Environment
+# =====================================
+jupyter>=1.0.0
+# Jupyter notebook interface
+ipython>=8.0.0
+# Enhanced Python shell
+notebook>=6.5.0
+# Jupyter notebook server
+
+# =====================================
+# Django Extensions & Tools
+# =====================================
+django-extensions>=3.2.0
+# Collection of custom extensions (includes shell_plus for Jupyter)
+ipython[notebook]
+# IPython with notebook support
+
+# =====================================
+# Image Processing
+# =====================================
+Pillow>=10.0.0
+# Python Imaging Library for handling uploads
+
+# =====================================
+# Environment & Configuration
+# =====================================
+python-decouple>=3.8
+# Separate settings from code (for deployment)
+
+# =====================================
+# Form Styling (Optional)
+# =====================================
+django-crispy-forms>=2.0
+# Control form rendering behavior
+crispy-bootstrap4>=1.0.0
+# Bootstrap 4 template pack for crispy forms
+
+# =====================================
+# Development Tools
+# =====================================
+django-debug-toolbar>=4.0.0
+# Debugging panel for Django development
+
+# =====================================
+# Database (SQLite included with Python)
+# =====================================
+# No additional database driver needed for SQLite
+# For PostgreSQL: psycopg2-binary>=2.9.0
+# For MySQL: mysqlclient>=2.1.0
+
+# =====================================
+# Testing & Quality
+# =====================================
+pytest>=7.0.0
+# Testing framework
+pytest-django>=4.5.0
+# Django plugin for pytest
+
+# =====================================
+# Additional Utilities
+# =====================================
+python-dateutil>=2.8.0
+# Powerful date/time extensions
+pytz>=2023.3
+# Timezone support
